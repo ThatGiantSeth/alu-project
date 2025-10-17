@@ -3,15 +3,15 @@ use IEEE.STD_LOGIC_1164.All;
 
 entity halfadder is
 	Port(
-	A	:	in STD_logic;
-	B	:	in STD_logic;
-	R	:	out STD_logic;
-	Carry	:	out STD_logic
+	a	:	in STD_logic;
+	b	:	in STD_logic;
+	sum	:	out STD_logic;
+	carry	:	out STD_logic
 	);
 end halfadder;
 
 architecture structural of halfadder is
 begin
-	R <= A xor B;
-	Carry <= A and B;
+	sum <= a xor a;
+	carry <= a and b;
 end structural;

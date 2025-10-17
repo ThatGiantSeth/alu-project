@@ -1,24 +1,29 @@
-timestamp=1760729291555
+timestamp=1760731413269
 
 [~A]
-ModifyID=1
+ModifyID=3
 Version=74
 
 [~MFT]
-0=7|0halfadder.mgf|999|0
-1=1|1halfadder.mgf|0|0
-3=1|3halfadder.mgf|0|0
+0=3|0halfadder.mgf|1497|0
+1=1|1halfadder.mgf|1489|744
+3=1|3halfadder.mgf|199|0
 
 [halfadder]
-A/adder=A/Adder 21|../src/halfadder.vhd|13|1*0
+A/adder=A/Adder 21|../src/halfadder.vhd|13|1*745
+A/structural=21|../src/halfadder.vhd|13|1*1489
 BinI32/adder=3*0
+BinI32/structural=3*199
 I=0*527
 I/adder=I/Adder 0*999
+I/structural=0*1497
 M=11|0|ve8|1760729291394|../src/halfadder.vhd|0*188*0xe8bc7b6f3e14279e3f412f91f89c230c4f6d2978|0*444*0x23b75c12e3e89f2ef000564498faa8c2
-M/adder=M/Adder 21|0|ve8|1760729291396|../src/halfadder.vhd|0*729*0x51c7681302c6ec5df560d35217d3e7388087cdbf|0*907*0x20116f55b147878295aeff36dce7fc50
+M/adder=M/Adder 21|0|ve8|1760731379307|../src/halfadder.vhd|0*729*0x51c7681302c6ec5df560d35217d3e7388087cdbf|0*907*0x20116f55b147878295aeff36dce7fc50
+M/structural=21|0|ve8|1760731413243|../src/halfadder.vhd|0*1207*0xfe15069498a37751ee27bc48b42032327a0ebb24|0*1400*0x20116f55b147878295aeff36dce7fc50
 R=../src/halfadder.vhd|4
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|df6222d8a183af79470a1a0a11a371eb1093b6854768ed9664634ca9f9371c7ba949741cb1e83585f5a6364c4d2c824c
-Version/adder=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|aa2639a8a5a70ec6691b492f142f0ca26677f121f0079f4f43003d5a3e488adc
+Version/adder=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|aa2639a8a5a70ec6691b492f142f0ca2f9e5533b57ffc53478677110952f0c67
+Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3ebbcfba787fc102edfa14801c695b7f5aa
 
 [~U]
 halfadder=HalfAdder 11|0*0|

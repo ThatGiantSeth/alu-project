@@ -1,29 +1,21 @@
-acom -reorder -O3 -e 100 -work halfadder -2002  $dsn/src/halfadder.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/half_adder/halfadder/src/halfadder.vhd
-# Compile Entity "HalfAdder"
-# Compile Architecture "Adder" of Entity "HalfAdder"
-# Incorrect order of units detected.
-# Automatic reorder and incremental recompilation of required units in progress.
-# File: C:/Users/aubre/alu-project/half_adder/halfadder/src/halfadder.vhd
-# Compile Entity "HalfAdder"
-# Compile Architecture "Adder" of Entity "HalfAdder"
-# File: C:/Users/aubre/alu-project/half_adder/halfadder/src/halfadder.vhd
-# Compile Entity "HalfAdder"
-# Compile Architecture "Adder" of Entity "HalfAdder"
-# File: C:/Users/aubre/alu-project/half_adder/halfadder/src/halfadder.vhd
-# Compile Entity "HalfAdder"
-# Compile Architecture "Adder" of Entity "HalfAdder"
-# Error: COMP96_0018: src/halfadder.vhd : (10, 2): Identifier expected.
-# Error: COMP96_0056: src/halfadder.vhd : (13, 1): Cannot find referenced entity declaration "HalfAdder".
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.4 [s]
-acom -reorder -O3 -e 100 -work halfadder -2002  $dsn/src/halfadder.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/half_adder/halfadder/src/halfadder.vhd
-# Compile Entity "HalfAdder"
-# Compile Architecture "Adder" of Entity "HalfAdder"
-# Top-level unit(s) detected:
-# Entity => HalfAdder
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration time 0.1 [s].
+acom -O3 -e 100 -work halfadder -2002  $dsn/src/halfadder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/half_adder/halfadder/src/halfadder.vhd
+# Compile Entity "halfadder"
+# Compile Architecture "Adder" of Entity "halfadder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work halfadder -2002  $dsn/src/halfadder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/half_adder/halfadder/src/halfadder.vhd
+# Compile Entity "halfadder"
+# Compile Architecture "structural" of Entity "halfadder"
+# Error: COMP96_0111: halfadder.vhd : (17, 5): Labels do not match.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work halfadder -2002  $dsn/src/halfadder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/half_adder/halfadder/src/halfadder.vhd
+# Compile Entity "halfadder"
+# Compile Architecture "structural" of Entity "halfadder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
