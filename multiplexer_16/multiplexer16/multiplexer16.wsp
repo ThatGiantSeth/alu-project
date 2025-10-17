@@ -1,0 +1,17 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+fulladder=1
+Built-in symbols=0
+adder16=0
+subtractor16=0
+multiplier16=0
+multiplexer16=0
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\multiplexer16\multiplexer16.adf|]
+Path=
+
+[Gui config]
+RunFor=100 ns
+
