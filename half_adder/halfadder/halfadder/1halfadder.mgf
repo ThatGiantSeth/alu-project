@@ -1,0 +1,24 @@
+V 000046 55 698           1760729291397 Adder
+(_unit VHDL(halfadder 0 4(adder 0 13))
+	(_version ve8)
+	(_time 1760729291398 2025.10.17 15:28:11)
+	(_source(\../src/halfadder.vhd\))
+	(_parameters tan)
+	(_code 8edad380dad9899889889fd4db888a888b898c8886)
+	(_ent
+		(_time 1760729291395)
+	)
+	(_object
+		(_port(_int A -1 0 6(_ent(_in))))
+		(_port(_int B -1 0 7(_ent(_in))))
+		(_port(_int R -1 0 8(_ent(_out))))
+		(_port(_int Carry -1 0 9(_ent(_out))))
+		(_prcs
+			(line__15(_arch 0 0 15(_assignment(_trgt(2))(_sens(0)(1)))))
+			(line__16(_arch 1 0 16(_assignment(_trgt(3))(_sens(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . Adder 2 -1)
+)

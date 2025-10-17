@@ -9,4 +9,4 @@ mode=none
 order=1
 macro=
 [Expand]
-halfadder=0
+halfadder=1

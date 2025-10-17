@@ -23,6 +23,10 @@ UCF=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=halfadder|Adder|0 
 ShowHide=ShowTopLevel
 Selected=
+[Files]
+/halfadder.vhd=-1
+[Files.Data]
+.\src\halfadder.vhd=VHDL Source Code

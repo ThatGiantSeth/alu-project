@@ -1,1 +1,3 @@
-0
+1
+~E 1 "../src/halfadder.vhd" 4 HalfAdder
+~A 1 "../src/halfadder.vhd" 13 Adder
