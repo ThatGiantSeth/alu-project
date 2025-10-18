@@ -1,7 +1,60 @@
-# Design: Design adder16 already active.
-# DESIGN: Default Design Language: VHDL
-# DESIGN: Default BDE Language: VHDL
-# DESIGN: C-Synthesis: Not Defined
-# DESIGN: HDL Synthesis: Not Defined
-# DESIGN: Physical Synthesis: Not Defined
-# DESIGN: Implementation: Not Defined
+acom -reorder -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
+# Compile Entity "Adder16"
+# Error: COMP96_0015: src/adder16.vhd : (14, 1): ';' expected.
+# Error: COMP96_0016: src/adder16.vhd : (14, 14): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -reorder -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "stuctural" of Entity "Adder16"
+# Error: COMP96_0019: src/adder16.vhd : (30, 2): Keyword 'end' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "stuctural" of Entity "Adder16"
+# Warning: ELAB1_0026: src/adder16.vhd : (29, 0): There is no default binding for component "fulladder". (No entity named "fulladder" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work adder16 -2002  $dsn/src/fulladder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/fulladder.vhd
+# Compile Entity "fulladder"
+# Compile Architecture "structural" of Entity "fulladder"
+# Warning: ELAB1_0026: src/fulladder.vhd : (24, 0): There is no default binding for component "halfadder". (No entity named "halfadder" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work adder16 -2002  $dsn/src/halfadder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/halfadder.vhd
+# Compile Entity "halfadder"
+# Compile Architecture "structural" of Entity "halfadder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work adder16 -2002  $dsn/src/fulladder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/fulladder.vhd
+# Compile Entity "fulladder"
+# Compile Architecture "structural" of Entity "fulladder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "stuctural" of Entity "Adder16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "stuctural" of Entity "Adder16"
+# Error: COMP96_0724: src/adder16.vhd : (40, 102): ',' or ')' expected.
+# Error: COMP96_0015: src/adder16.vhd : (41, 2): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "stuctural" of Entity "Adder16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]

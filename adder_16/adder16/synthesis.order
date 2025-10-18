@@ -1,0 +1,4 @@
+i<>.\src\fulladder.vhd
+i<>.\src\halfadder.vhd
+i<>.\src\adder16.vhd
+i<>.\src\TestBench\adder16_TB.vhd

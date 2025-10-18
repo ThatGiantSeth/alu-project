@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd" 
+MESSAGE "Compile Entity "Adder16"" 
+MESSAGE "Compile Architecture "stuctural" of Entity "Adder16"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]" 

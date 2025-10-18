@@ -26,3 +26,17 @@ WindowVisible=0
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+[Files]
+/fulladder.vhd=-1
+/halfadder.vhd=-1
+/adder16.vhd=-1
+TestBench/adder16_TB.vhd=-1
+TestBench/adder16_TB_runtest.do=-1
+[Files.Data]
+.\src\fulladder.vhd=VHDL Source Code
+.\src\halfadder.vhd=VHDL Source Code
+.\src\adder16.vhd=VHDL Source Code
+.\src\TestBench\adder16_TB.vhd=VHDL Test Bench
+.\src\TestBench\adder16_TB_runtest.do=Macro
+[Groups]
+TestBench=1
