@@ -1,16 +1,16 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity Subtractor16 is
+entity subtractor16 is
 	Port(
 	A	:	in std_logic_vector(15 downto 0);
 	B	:	in std_logic_vector(15 downto 0);
 	Diff:	out std_logic_vector(15 downto 0);
 	Cout:	out std_logic
 	);
-end Subtractor16;
+end subtractor16;
 
-architecture structural of Subtractor16 is
+architecture structural of subtractor16 is
 component fulladder is
 	Port(
 	A	:	in std_logic;

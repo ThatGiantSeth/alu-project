@@ -1,11 +1,11 @@
-15
+21
 ~E 1 "../src/fulladder.vhd" 4 fulladder
 ~A 1 "../src/fulladder.vhd" 13 structural
 ~E 1 "../src/halfadder.vhd" 4 halfadder
 ~A 1 "../src/halfadder.vhd" 13 structural
-~E 1 "../src/subtractor16.vhd" 4 Subtractor16
+~E 1 "../src/subtractor16.vhd" 4 subtractor16
 ~A 1 "../src/subtractor16.vhd" 13 structural
-~A 1 "../src/subtractor16.vhd" 13 stuctural
+~A 0 "" 0 stuctural
 ~E 1 "../src/TestBench/subtractor16_TB.vhd" 6 subtractor16_tb
 ~A 1 "../src/TestBench/subtractor16_TB.vhd" 9 TB_ARCHITECTURE
 ~C 1 "../src/TestBench/subtractor16_TB.vhd" 51 testbench_for_subtractor16
