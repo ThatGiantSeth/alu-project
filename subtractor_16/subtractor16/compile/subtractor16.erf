@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/Users/aubre/alu-project/subtractor_16/subtractor16/src/subtractor16.vhd" 
+MESSAGE "Compile Entity "Subtractor16"" 
+MESSAGE "Compile Architecture "structural" of Entity "Subtractor16"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 

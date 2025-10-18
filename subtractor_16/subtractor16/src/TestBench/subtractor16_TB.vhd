@@ -3,26 +3,24 @@ use ieee.std_logic_1164.all;
 
 	-- Add your library and packages declaration here ...
 
-entity adder16_tb is
-end adder16_tb;
+entity subtractor16_tb is
+end subtractor16_tb;
 
-architecture TB_ARCHITECTURE of adder16_tb is
+architecture TB_ARCHITECTURE of subtractor16_tb is
 	-- Component declaration of the tested unit
-	component adder16
+	component subtractor16
 	port(
 		A : in STD_LOGIC_VECTOR(15 downto 0);
 		B : in STD_LOGIC_VECTOR(15 downto 0);
-		Cin : in STD_LOGIC;
-		Sum : out STD_LOGIC_VECTOR(15 downto 0);
+		Diff : out STD_LOGIC_VECTOR(15 downto 0);
 		Cout : out STD_LOGIC );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
 	signal A : STD_LOGIC_VECTOR(15 downto 0);
 	signal B : STD_LOGIC_VECTOR(15 downto 0);
-	signal Cin : STD_LOGIC;
 	-- Observed signals - signals mapped to the output ports of tested entity
-	signal Sum : STD_LOGIC_VECTOR(15 downto 0);
+	signal Diff : STD_LOGIC_VECTOR(15 downto 0);
 	signal Cout : STD_LOGIC;
 
 	-- Add your code here ...
@@ -30,37 +28,31 @@ architecture TB_ARCHITECTURE of adder16_tb is
 begin
 
 	-- Unit Under Test port map
-	UUT : adder16
+	UUT : subtractor16
 		port map (
 			A => A,
 			B => B,
-			Cin => Cin,
-			Sum => Sum,
+			Diff => Diff,
 			Cout => Cout
 		);
 
 	-- Add your stimulus here ... 
-	
 stim_proc: process
 begin
     A <= "0000000000000111"; 
     B <= "0000000000000001"; 
-    Cin <= '1';
-    wait for 10 ns;	 
-	
-	
-   wait;
+    wait for 10 ns;
+    wait;
+
 end process;
-
-
 
 end TB_ARCHITECTURE;
 
-configuration TESTBENCH_FOR_adder16 of adder16_tb is
+configuration TESTBENCH_FOR_subtractor16 of subtractor16_tb is
 	for TB_ARCHITECTURE
-		for UUT : adder16
-			use entity work.adder16(stuctural);
+		for UUT : subtractor16
+			use entity work.subtractor16(stuctural);
 		end for;
 	end for;
-end TESTBENCH_FOR_adder16;
+end TESTBENCH_FOR_subtractor16;
 

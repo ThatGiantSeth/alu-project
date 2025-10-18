@@ -1,7 +1,10 @@
-7
+17
 ~E 1 "../src/adder16.vhd" 4 Adder16
 ~A 1 "../src/adder16.vhd" 14 stuctural
+~E 1 "../src/TestBench/adder16_TB.vhd" 6 adder16_tb
+~A 1 "../src/TestBench/adder16_TB.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/fulladder.vhd" 4 fulladder
 ~A 1 "../src/fulladder.vhd" 13 structural
 ~E 1 "../src/halfadder.vhd" 4 halfadder
 ~A 1 "../src/halfadder.vhd" 13 structural
+~C 1 "../src/TestBench/adder16_TB.vhd" 59 testbench_for_adder16

@@ -1,0 +1,35 @@
+Active-HDL 12.0.118.7745 2025-10-18 15:24:14
+
+Elaboration top modules:
+Architecture                  stuctural(Subtractor16)
+
+
+--------------------------------------------------------------------------------------------------
+Entity       | Architecture | Library      | Info | Compiler Version        | Compilation Options
+--------------------------------------------------------------------------------------------------
+Subtractor16 | stuctural    | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
+fulladder    | structural   | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
+halfadder    | structural   | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
+--------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------
+VHDL Package                | Library      | Info | Compiler Version        | Compilation Options
+--------------------------------------------------------------------------------------------------
+standard                    | std          |      |                         | <unavailable>
+TEXTIO                      | std          |      |                         | <unavailable>
+std_logic_1164              | ieee         |      |                         | <unavailable>
+--------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------
+Library                     | Comment
+--------------------------------------------------------------------------------------------------
+ieee                        | Standard IEEE packages library
+std                         | Standard VHDL library
+subtractor16                | None
+--------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+Subtractor16 Subtractor16 stuctural
+
+
+The performance of simulation is reduced. Version EDU Edition

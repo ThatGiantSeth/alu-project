@@ -23,7 +23,7 @@ UCF=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=adder16_tb|TB_ARCHITECTURE|0  
 ShowHide=ShowTopLevel
 Selected=
 [Files]

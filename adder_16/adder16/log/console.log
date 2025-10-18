@@ -1,60 +1,30 @@
-acom -reorder -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
-# Compile Entity "Adder16"
-# Error: COMP96_0015: src/adder16.vhd : (14, 1): ';' expected.
-# Error: COMP96_0016: src/adder16.vhd : (14, 14): Design unit declaration expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -reorder -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
-# Compile Entity "Adder16"
-# Compile Architecture "stuctural" of Entity "Adder16"
-# Error: COMP96_0019: src/adder16.vhd : (30, 2): Keyword 'end' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
-# Compile Entity "Adder16"
-# Compile Architecture "stuctural" of Entity "Adder16"
-# Warning: ELAB1_0026: src/adder16.vhd : (29, 0): There is no default binding for component "fulladder". (No entity named "fulladder" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work adder16 -2002  $dsn/src/fulladder.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/fulladder.vhd
-# Compile Entity "fulladder"
-# Compile Architecture "structural" of Entity "fulladder"
-# Warning: ELAB1_0026: src/fulladder.vhd : (24, 0): There is no default binding for component "halfadder". (No entity named "halfadder" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work adder16 -2002  $dsn/src/halfadder.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/halfadder.vhd
-# Compile Entity "halfadder"
-# Compile Architecture "structural" of Entity "halfadder"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work adder16 -2002  $dsn/src/fulladder.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/fulladder.vhd
-# Compile Entity "fulladder"
-# Compile Architecture "structural" of Entity "fulladder"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
-# Compile Entity "Adder16"
-# Compile Architecture "stuctural" of Entity "Adder16"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
-# Compile Entity "Adder16"
-# Compile Architecture "stuctural" of Entity "Adder16"
-# Error: COMP96_0724: src/adder16.vhd : (40, 102): ',' or ')' expected.
-# Error: COMP96_0015: src/adder16.vhd : (41, 2): ';' expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work adder16 -2002  $dsn/src/adder16.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/adder_16/adder16/src/adder16.vhd
-# Compile Entity "Adder16"
-# Compile Architecture "stuctural" of Entity "Adder16"
-# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+adder16_tb adder16_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6182 kB (elbread=256 elab2=5787 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\adder_16\adder16\src\wave.asdb
+#  3:07 PM, Saturday, October 18, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.

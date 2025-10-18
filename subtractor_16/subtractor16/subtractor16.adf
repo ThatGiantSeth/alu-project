@@ -3,13 +3,17 @@ Current Flow=Multivendor
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=subtractor16
+
 [Library]
 subtractor16=.\subtractor16\subtractor16.lib
+
 [$LibMap$]
 subtractor16=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -18,11 +22,32 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
+
 [IMPLEMENTATION]
 UCF=
+
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=subtractor16|stuctural|0 
 ShowHide=ShowTopLevel
 Selected=
+
+[Groups]
+TestBench=1
+
+[Files]
+/halfadder.vhd=-1
+/fulladder.vhd=-1
+/subtractor16.vhd=-1
+TestBench/subtractor16_TB.vhd=-1
+TestBench/subtractor16_TB_runtest.do=-1
+
+[Files.Data]
+.\src\halfadder.vhd=VHDL Source Code
+.\src\fulladder.vhd=VHDL Source Code
+.\src\subtractor16.vhd=VHDL Source Code
+
+.\src\TestBench\subtractor16_TB.vhd=VHDL Test Bench
+.\src\TestBench\subtractor16_TB_runtest.do=Macro
