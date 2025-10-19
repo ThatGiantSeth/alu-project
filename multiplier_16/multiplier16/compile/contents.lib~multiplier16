@@ -1,1 +1,10 @@
-0
+18
+~E 1 "../src/fulladder.vhd" 4 fulladder
+~A 1 "../src/fulladder.vhd" 13 structural
+~E 1 "../src/halfadder.vhd" 4 halfadder
+~A 1 "../src/halfadder.vhd" 13 structural
+~E 1 "../src/multiplier16.vhd" 5 multiplier16
+~A 1 "../src/multiplier16.vhd" 13 behavioral
+~E 1 "../src/TestBench/multiplier16_TB.vhd" 7 multiplier16_tb
+~A 1 "../src/TestBench/multiplier16_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "../src/TestBench/multiplier16_TB.vhd" 51 testbench_for_multiplier16

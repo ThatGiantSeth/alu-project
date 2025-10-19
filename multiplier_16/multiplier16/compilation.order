@@ -1,3 +1,4 @@
 .\src\halfadder.vhd
 .\src\fulladder.vhd
 .\src\multiplier16.vhd
+.\src\TestBench\multiplier16_TB.vhd

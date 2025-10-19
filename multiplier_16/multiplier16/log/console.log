@@ -1,0 +1,425 @@
+acom -reorder -O3 -e 100 -work multiplier16 -2002  $dsn/src/multiplier16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "behavioral" of Entity "multiplier16"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => multiplier16
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/multiplier16.vhd
+# Compile Architecture "behavioral" of Entity "multiplier16"
+# Error: COMP96_0078: multiplier16.vhd : (28, 4): Unknown identifier "mcd".
+# Error: COMP96_0133: multiplier16.vhd : (28, 4): Cannot find object declaration.
+# Error: COMP96_0078: multiplier16.vhd : (29, 4): Unknown identifier "mcd".
+# Error: COMP96_0133: multiplier16.vhd : (29, 4): Cannot find object declaration.
+# Error: COMP96_0078: multiplier16.vhd : (34, 36): Unknown identifier "mcd".
+# Error: COMP96_0133: multiplier16.vhd : (34, 36): Cannot find object declaration.
+# Error: COMP96_0077: multiplier16.vhd : (34, 21): Undefined type of expression. Expected type 'SIGNED'.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/multiplier16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "behavioral" of Entity "multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/fulladder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/fulladder.vhd
+# Compile Entity "fulladder"
+# Compile Architecture "structural" of Entity "fulladder"
+# Warning: ELAB1_0026: fulladder.vhd : (24, 0): There is no default binding for component "halfadder". (No entity named "halfadder" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/halfadder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/halfadder.vhd
+# Compile Entity "halfadder"
+# Compile Architecture "structural" of Entity "halfadder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/fulladder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/fulladder.vhd
+# Compile Entity "fulladder"
+# Compile Architecture "structural" of Entity "fulladder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+multiplier16_tb multiplier16_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  1:21 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  1:22 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  1:22 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/multiplier16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "behavioral" of Entity "multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+multiplier16_tb multiplier16_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  1:28 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/multiplier16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "behavioral" of Entity "multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+multiplier16_tb multiplier16_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  1:49 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+multiplier16_tb multiplier16_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  2:01 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/multiplier16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "behavioral" of Entity "multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+asim -O5 +access +r +m+multiplier16_tb multiplier16_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  2:04 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/multiplier16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "behavioral" of Entity "multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+run
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  2:05 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  2:06 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  2:06 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+multiplier16_tb multiplier16_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work multiplier16 -2002  $dsn/src/TestBench/multiplier16_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd
+# Compile Entity "multiplier16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"
+# Compile Configuration "TESTBENCH_FOR_multiplier16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5173 kB (elbread=256 elab2=4779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\aubre\alu-project\multiplier_16\multiplier16\src\wave.asdb
+#  2:06 PM, Sunday, October 19, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.

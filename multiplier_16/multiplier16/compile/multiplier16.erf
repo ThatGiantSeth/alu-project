@@ -1,0 +1,6 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/Users/aubre/alu-project/multiplier_16/multiplier16/src/TestBench/multiplier16_TB.vhd" 
+MESSAGE "Compile Entity "multiplier16_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_multiplier16"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]" 
