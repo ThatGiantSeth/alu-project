@@ -23,10 +23,20 @@ UCF=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=halfadder|Adder|0  
+HierarchyInformation=halfadder_tb|TB_ARCHITECTURE|0     
 ShowHide=ShowTopLevel
 Selected=
 [Files]
 /halfadder.vhd=-1
+/xorgate.vhd=-1
+/andgate.vhd=-1
+TestBench/halfadder_TB.vhd=-1
+TestBench/halfadder_TB_runtest.do=-1
 [Files.Data]
 .\src\halfadder.vhd=VHDL Source Code
+.\src\xorgate.vhd=VHDL Source Code
+.\src\andgate.vhd=VHDL Source Code
+.\src\TestBench\halfadder_TB.vhd=VHDL Test Bench
+.\src\TestBench\halfadder_TB_runtest.do=Macro
+[Groups]
+TestBench=1

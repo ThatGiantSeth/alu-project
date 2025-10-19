@@ -14,8 +14,8 @@ architecture structural	of fulladder is
 
 component halfadder is
 	Port(
-	a, b : in std_logic;
-	sum, carry : out std_logic);
+	A, B : in std_logic;
+	R, Carry : out std_logic);
 end component;		 
 
 signal sum1, carry1, carry2 : std_logic;

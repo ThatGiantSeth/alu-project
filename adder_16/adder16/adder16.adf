@@ -30,7 +30,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=adder16_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=adder16_tb|TB_ARCHITECTURE|0 fulladder|structural|0  
 ShowHide=ShowTopLevel
 Selected=
 
@@ -38,15 +38,15 @@ Selected=
 TestBench=1
 
 [Files]
-/fulladder.vhd=-1
 /halfadder.vhd=-1
+/fulladder.vhd=-1
 /adder16.vhd=-1
 TestBench/adder16_TB.vhd=-1
 TestBench/adder16_TB_runtest.do=-1
 
 [Files.Data]
-.\src\fulladder.vhd=VHDL Source Code
 .\src\halfadder.vhd=VHDL Source Code
+.\src\fulladder.vhd=VHDL Source Code
 .\src\adder16.vhd=VHDL Source Code
 .\src\TestBench\adder16_TB.vhd=VHDL Test Bench
 .\src\TestBench\adder16_TB_runtest.do=Macro

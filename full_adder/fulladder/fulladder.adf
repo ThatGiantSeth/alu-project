@@ -31,15 +31,27 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=fulladder|structural|0 fulladder_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
 [Files]
+/xorgate.vhd=-1
+/andgate.vhd=-1
 /halfadder.vhd=-1
 /fulladder.vhd=-1
+TestBench/fulladder_TB.vhd=-1
+TestBench/fulladder_TB_runtest.do=-1
 
 [Files.Data]
+.\src\xorgate.vhd=VHDL Source Code
+.\src\andgate.vhd=VHDL Source Code
 .\src\halfadder.vhd=VHDL Source Code
-
 .\src\fulladder.vhd=VHDL Source Code
+.\src\TestBench\fulladder_TB.vhd=VHDL Test Bench
+.\src\TestBench\fulladder_TB_runtest.do=Macro
+
+[ORDER]
+Synchronize=1
+[Groups]
+TestBench=1

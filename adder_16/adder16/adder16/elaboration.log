@@ -1,4 +1,4 @@
-Active-HDL 12.0.118.7745 2025-10-19 11:13:31
+Active-HDL 12.0.118.7745 2025-10-19 12:59:17
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(adder16_tb)
@@ -8,7 +8,7 @@ Architecture                  TB_ARCHITECTURE(adder16_tb)
 Entity     | Architecture    | Library | Info | Compiler Version        | Compilation Options
 ----------------------------------------------------------------------------------------------
 adder16_tb | TB_ARCHITECTURE | adder16 |      | 12.0.118.7745 (Windows) | -O3
-Adder16    | stuctural       | adder16 |      | 12.0.118.7745 (Windows) | -O3
+Adder16    | structural      | adder16 |      | 12.0.118.7745 (Windows) | -O3
 fulladder  | structural      | adder16 |      | 12.0.118.7745 (Windows) | -O3
 halfadder  | structural      | adder16 |      | 12.0.118.7745 (Windows) | -O3
 ----------------------------------------------------------------------------------------------

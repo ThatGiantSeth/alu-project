@@ -45,9 +45,9 @@ begin
 begin	
 	--A <= to_signed(0,16);
 	--B <= to_signed(0,16);
-    A <= ("1000000000000001"); 
-    B <= ("0000000000000011"); 
-    Cin <= '1';
+    A <= ("0000000000010101"); 
+    B <= ("1111111111010100"); 
+    Cin <= '0';
     wait for 10 ns;	 
 	
 	
@@ -60,7 +60,7 @@ end TB_ARCHITECTURE;
 configuration TESTBENCH_FOR_adder16 of adder16_tb is
 	for TB_ARCHITECTURE
 		for UUT : adder16
-			use entity work.adder16(stuctural);
+			use entity work.adder16(structural);
 		end for;
 	end for;
 end TESTBENCH_FOR_adder16;

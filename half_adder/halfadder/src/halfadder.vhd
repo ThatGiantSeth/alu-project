@@ -10,8 +10,21 @@ entity halfadder is
 	);
 end halfadder;
 
-architecture structural of halfadder is
+architecture structural of halfadder is	  
+
+component xorgate is
+	Port(
+	a, b : in std_logic;
+	z : out std_logic);
+end component; 
+
+component andgate is
+	Port(
+	a, b : in std_logic;
+	z : out std_logic);
+end component; 	
+
 begin
-	R <= A xor B;
-	Carry <= A and B;
+	u1 : xorgate port map (A => a, B => b, z => R);
+	u2 : andgate port map (A => a, B => b, z => Carry);
 end structural;

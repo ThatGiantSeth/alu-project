@@ -1,1 +1,4 @@
 .\src\halfadder.vhd
+.\src\xorgate.vhd
+.\src\andgate.vhd
+.\src\TestBench\halfadder_TB.vhd

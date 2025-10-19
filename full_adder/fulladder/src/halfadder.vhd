@@ -3,15 +3,28 @@ use IEEE.STD_LOGIC_1164.All;
 
 entity halfadder is
 	Port(
-	a	:	in STD_logic;
-	b	:	in STD_logic;
-	sum	:	out STD_logic;
-	carry	:	out STD_logic
+	A	:	in STD_logic;
+	B	:	in STD_logic;
+	R	:	out STD_logic;
+	Carry	:	out STD_logic
 	);
 end halfadder;
 
-architecture structural of halfadder is
+architecture structural of halfadder is	  
+
+component xorgate is
+	Port(
+	a, b : in std_logic;
+	z : out std_logic);
+end component; 
+
+component andgate is
+	Port(
+	a, b : in std_logic;
+	z : out std_logic);
+end component; 	
+
 begin
-	sum <= a xor a;
-	carry <= a and b;
+	u1 : xorgate port map (A => a, B => b, z => R);
+	u2 : andgate port map (A => a, B => b, z => Carry);
 end structural;
