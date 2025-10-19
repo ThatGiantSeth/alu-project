@@ -1,4 +1,4 @@
-31
+39
 ~E 1 "../src/fulladder.vhd" 4 fulladder
 ~A 1 "../src/fulladder.vhd" 13 structural
 ~E 1 "../src/halfadder.vhd" 4 halfadder

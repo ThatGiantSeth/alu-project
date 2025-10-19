@@ -15,19 +15,18 @@ architecture behavioral of multiplier16 is
 	signal multiplicand	:	signed(15 downto 0);
 	signal multiplier	:	signed(15 downto 0);
 	signal result		:	signed(31 downto 0); 	
-	signal sign_extend : signed(15 downto 0);
 	
 	begin
 		process(A,B)
 		variable temp_result	:	signed(31 downto 0);
 		variable mcand			:	signed(31 downto 0);
 		variable mlt			:	signed(15 downto 0); 
-		variable sign			: 	std_logic;
+		variable sign			: 	std_logic;	 
+		variable sign_extend	:	signed(15 downto 0);
 		
 		begin 
 			temp_result := (others => '0');
-			mcand := (others => '0');
-			mcand(15 downto 0) := signed(A);
+			mcand := resize(signed(A), 32);
 			mlt := signed(B);
 			sign := mcand(15) xor mlt(15);
 			
@@ -37,15 +36,9 @@ architecture behavioral of multiplier16 is
 				end if;
 			end loop;  
 			
-			if sign = '1' then 
-				Product <= (others => '0');
-			else
-				Product <= (others => '1');
-			end if;
-			
 			result <= temp_result;	
 			
-			sign_extend <= (others => temp_result(15));	 
+			sign_extend := (others => temp_result(15));	 
 			if temp_result(31 downto 16) /= sign_extend then
 				Ovf <= '1';
 			else

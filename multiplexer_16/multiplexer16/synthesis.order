@@ -1,0 +1,6 @@
+i<>.\src\multiplexer16.vhd
+i<>.\src\multiplexer1.vhd
+i<>.\src\TestBench\multiplexer16_TB.vhd
+i<>.\src\notgate.vhd
+i<>.\src\andgate.vhd
+i<>.\src\orgate.vhd

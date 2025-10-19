@@ -1,0 +1,40 @@
+Active-HDL 12.0.118.7745 2025-10-19 19:02:53
+
+Elaboration top modules:
+Architecture                  TB_ARCHITECTURE(multiplexer16_tb)
+
+
+----------------------------------------------------------------------------------------------------------
+Entity           | Architecture    | Library       | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------------
+multiplexer16_tb | TB_ARCHITECTURE | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+multiplexer16    | Structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+multiplexer1     | structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+notgate          | behavioral      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+and3gate         | behavioral      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+andgate          | behavioral      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+or5gate          | structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+VHDL Package                       | Library       | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------------
+standard                           | std           |      |                         | <unavailable>
+TEXTIO                             | std           |      |                         | <unavailable>
+std_logic_1164                     | ieee          |      |                         | <unavailable>
+NUMERIC_STD                        | ieee          |      |                         | <unavailable>
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Library                            | Comment
+----------------------------------------------------------------------------------------------------------
+ieee                               | Standard IEEE packages library
+multiplexer16                      | None
+std                                | Standard VHDL library
+----------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+multiplexer16_tb multiplexer16_tb TB_ARCHITECTURE
+
+
+The performance of simulation is reduced. Version EDU Edition

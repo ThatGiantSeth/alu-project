@@ -1,0 +1,14 @@
+[Files List]
+C:\Aldec\Active-HDL-12\vlib\std/src/standard.vhd=S
+C:\Aldec\Active-HDL-12\vlib\std/src/textio.vhd=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/std_logic_1164-body.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/numeric_std.vhdl=S
+C:\Aldec\Active-HDL-12\vlib\ieee/src/numeric_std-body.vhdl=S
+C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16/src/or5gate.vhd=S
+C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16/src/andgate.vhd=S
+C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16/src/and3gate.vhd=S
+C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16/src/notgate.vhd=S
+C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16/src/multiplexer1.vhd=S
+C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16/src/multiplexer16.vhd=S
+C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16/src/TestBench/multiplexer16_TB.vhd=S
