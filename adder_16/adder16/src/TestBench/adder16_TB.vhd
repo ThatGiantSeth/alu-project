@@ -1,4 +1,5 @@
 library ieee;
+use ieee.NUMERIC_STD.all;
 use ieee.std_logic_1164.all;
 
 	-- Add your library and packages declaration here ...
@@ -10,19 +11,19 @@ architecture TB_ARCHITECTURE of adder16_tb is
 	-- Component declaration of the tested unit
 	component adder16
 	port(
-		A : in STD_LOGIC_VECTOR(15 downto 0);
-		B : in STD_LOGIC_VECTOR(15 downto 0);
+		A : in SIGNED(15 downto 0);
+		B : in SIGNED(15 downto 0);
 		Cin : in STD_LOGIC;
-		Sum : out STD_LOGIC_VECTOR(15 downto 0);
+		Sum : out SIGNED(15 downto 0);
 		Cout : out STD_LOGIC );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
-	signal A : STD_LOGIC_VECTOR(15 downto 0);
-	signal B : STD_LOGIC_VECTOR(15 downto 0);
+	signal A : SIGNED(15 downto 0);
+	signal B : SIGNED(15 downto 0);
 	signal Cin : STD_LOGIC;
 	-- Observed signals - signals mapped to the output ports of tested entity
-	signal Sum : STD_LOGIC_VECTOR(15 downto 0);
+	signal Sum : SIGNED(15 downto 0);
 	signal Cout : STD_LOGIC;
 
 	-- Add your code here ...
@@ -39,19 +40,19 @@ begin
 			Cout => Cout
 		);
 
-	-- Add your stimulus here ... 
-	
-stim_proc: process
-begin
-    A <= "0000000000000111"; 
-    B <= "0000000000000001"; 
+	-- Add your stimulus here ...
+	stim_proc: process
+begin	
+	--A <= to_signed(0,16);
+	--B <= to_signed(0,16);
+    A <= ("1000000000000001"); 
+    B <= ("0000000000000011"); 
     Cin <= '1';
     wait for 10 ns;	 
 	
 	
    wait;
 end process;
-
 
 
 end TB_ARCHITECTURE;

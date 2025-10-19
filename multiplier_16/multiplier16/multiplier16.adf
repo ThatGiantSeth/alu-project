@@ -26,3 +26,11 @@ WindowVisible=0
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+[Files]
+/halfadder.vhd=-1
+/fulladder.vhd=-1
+/multiplier16.vhd=-1
+[Files.Data]
+.\src\halfadder.vhd=VHDL Source Code
+.\src\fulladder.vhd=VHDL Source Code
+.\src\multiplier16.vhd=VHDL Source Code
