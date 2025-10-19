@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 "C:/Users/aubre/alu-project/subtractor_16/subtractor16/src/TestBench/subtractor16_TB.vhd" VHDL subtractor16 1 0 0 -02
+=======
+"C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/halfadder.vhd" VHDL subtractor16 1 0 0 -02
+"C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/fulladder.vhd" VHDL subtractor16 1 0 0 -02
+"C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/subtractor16.vhd" VHDL subtractor16 1 0 0 -02
+"C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/TestBench/subtractor16_TB.vhd" VHDL subtractor16 1 0 0 -02
+>>>>>>> 12e04fe875e40bda35f4c7b212ae9f89715cc241
 . . 0 0 0

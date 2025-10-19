@@ -51,7 +51,7 @@ end TB_ARCHITECTURE;
 configuration TESTBENCH_FOR_subtractor16 of subtractor16_tb is
 	for TB_ARCHITECTURE
 		for UUT : subtractor16
-			use entity work.subtractor16(stuctural);
+			use entity work.subtractor16(structural);
 		end for;
 	end for;
 end TESTBENCH_FOR_subtractor16;

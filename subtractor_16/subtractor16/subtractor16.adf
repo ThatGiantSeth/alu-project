@@ -30,7 +30,11 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
+<<<<<<< HEAD
 HierarchyInformation=subtractor16|structural|0   
+=======
+HierarchyInformation=subtractor16_tb|TB_ARCHITECTURE|0 
+>>>>>>> 12e04fe875e40bda35f4c7b212ae9f89715cc241
 ShowHide=ShowTopLevel
 Selected=
 
@@ -48,6 +52,6 @@ TestBench/subtractor16_TB_runtest.do=-1
 .\src\halfadder.vhd=VHDL Source Code
 .\src\fulladder.vhd=VHDL Source Code
 .\src\subtractor16.vhd=VHDL Source Code
-
 .\src\TestBench\subtractor16_TB.vhd=VHDL Test Bench
 .\src\TestBench\subtractor16_TB_runtest.do=Macro
+
