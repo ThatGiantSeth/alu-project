@@ -13,7 +13,8 @@ architecture TB_ARCHITECTURE of multiplier16_tb is
 	port(
 		A : in STD_LOGIC_VECTOR(15 downto 0);
 		B : in STD_LOGIC_VECTOR(15 downto 0);
-		Product : out STD_LOGIC_VECTOR(31 downto 0) );
+		Product : out STD_LOGIC_VECTOR(31 downto 0);
+		Ovf : out STD_LOGIC );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
@@ -21,6 +22,7 @@ architecture TB_ARCHITECTURE of multiplier16_tb is
 	signal B : STD_LOGIC_VECTOR(15 downto 0);
 	-- Observed signals - signals mapped to the output ports of tested entity
 	signal Product : STD_LOGIC_VECTOR(31 downto 0);
+	signal Ovf : STD_LOGIC;
 
 	-- Add your code here ...
 
@@ -31,20 +33,20 @@ begin
 		port map (
 			A => A,
 			B => B,
-			Product => Product
+			Product => Product,
+			Ovf => Ovf
 		);
 
-	-- Add your stimulus here ... 
+	-- Add your stimulus here ...
 		stim_proc: process
 begin	
-    A <= ("0000000000010101"); 
-    B <= ("0000000000000010"); 
+    A <= ("1111111111101011"); 
+    B <= ("0000000000001000"); 
     wait for 10 ns;	 
 	
 	
    wait;
 end process;
-
 
 end TB_ARCHITECTURE;
 

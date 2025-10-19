@@ -1,1 +1,2 @@
-multiplier16 ENTITY
+TESTBENCH_FOR_multiplier16 CONFIGURATION
+fulladder ENTITY
