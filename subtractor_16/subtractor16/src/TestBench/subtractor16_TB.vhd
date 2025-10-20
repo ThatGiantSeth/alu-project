@@ -1,4 +1,5 @@
 library ieee;
+use ieee.NUMERIC_STD.all;
 use ieee.std_logic_1164.all;
 
 	-- Add your library and packages declaration here ...
@@ -10,17 +11,17 @@ architecture TB_ARCHITECTURE of subtractor16_tb is
 	-- Component declaration of the tested unit
 	component subtractor16
 	port(
-		A : in STD_LOGIC_VECTOR(15 downto 0);
-		B : in STD_LOGIC_VECTOR(15 downto 0);
-		Diff : out STD_LOGIC_VECTOR(15 downto 0);
+		A : in SIGNED(15 downto 0);
+		B : in SIGNED(15 downto 0);
+		Diff : out SIGNED(15 downto 0);
 		Cout : out STD_LOGIC );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
-	signal A : STD_LOGIC_VECTOR(15 downto 0);
-	signal B : STD_LOGIC_VECTOR(15 downto 0);
+	signal A : SIGNED(15 downto 0);
+	signal B : SIGNED(15 downto 0);
 	-- Observed signals - signals mapped to the output ports of tested entity
-	signal Diff : STD_LOGIC_VECTOR(15 downto 0);
+	signal Diff : SIGNED(15 downto 0);
 	signal Cout : STD_LOGIC;
 
 	-- Add your code here ...
@@ -37,7 +38,7 @@ begin
 		);
 
 	-- Add your stimulus here ... 
-stim_proc: process
+	stim_proc: process
 begin
     A <= "0000000000000111"; 
     B <= "0000000000000001"; 

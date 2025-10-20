@@ -22,6 +22,7 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
+fileopenfolder=C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16\src
 
 [IMPLEMENTATION]
 UCF=
@@ -30,11 +31,8 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-<<<<<<< HEAD
-HierarchyInformation=subtractor16|structural|0   
-=======
 HierarchyInformation=subtractor16_tb|TB_ARCHITECTURE|0 
->>>>>>> 12e04fe875e40bda35f4c7b212ae9f89715cc241
+HierarchyInformation=subtractor16|structural|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -45,6 +43,7 @@ TestBench=1
 /halfadder.vhd=-1
 /fulladder.vhd=-1
 /subtractor16.vhd=-1
+/notgate.vhd=-1
 TestBench/subtractor16_TB.vhd=-1
 TestBench/subtractor16_TB_runtest.do=-1
 
@@ -52,6 +51,7 @@ TestBench/subtractor16_TB_runtest.do=-1
 .\src\halfadder.vhd=VHDL Source Code
 .\src\fulladder.vhd=VHDL Source Code
 .\src\subtractor16.vhd=VHDL Source Code
+.\src\notgate.vhd=VHDL Source Code
 .\src\TestBench\subtractor16_TB.vhd=VHDL Test Bench
 .\src\TestBench\subtractor16_TB_runtest.do=Macro
 

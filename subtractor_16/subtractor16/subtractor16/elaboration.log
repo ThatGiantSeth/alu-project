@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-Active-HDL 12.0.118.7745 2025-10-18 16:11:47
-
-Elaboration top modules:
-Architecture                  structural(Subtractor16)
-
-
---------------------------------------------------------------------------------------------------
-Entity       | Architecture | Library      | Info | Compiler Version        | Compilation Options
---------------------------------------------------------------------------------------------------
-Subtractor16 | structural   | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
-fulladder    | structural   | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
-halfadder    | structural   | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
---------------------------------------------------------------------------------------------------
-=======
-Active-HDL 12.0.118.7745 2025-10-18 16:20:24
+Active-HDL 12.0.118.7745 2025-10-20 10:55:22
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(subtractor16_tb)
@@ -24,10 +9,10 @@ Entity          | Architecture    | Library      | Info | Compiler Version      
 --------------------------------------------------------------------------------------------------------
 subtractor16_tb | TB_ARCHITECTURE | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
 subtractor16    | structural      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
+notgate         | behavioral      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
 fulladder       | structural      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
 halfadder       | structural      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
 --------------------------------------------------------------------------------------------------------
->>>>>>> 12e04fe875e40bda35f4c7b212ae9f89715cc241
 
 --------------------------------------------------------------------------------------------------------
 VHDL Package                      | Library      | Info | Compiler Version        | Compilation Options
@@ -35,6 +20,7 @@ VHDL Package                      | Library      | Info | Compiler Version      
 standard                          | std          |      |                         | <unavailable>
 TEXTIO                            | std          |      |                         | <unavailable>
 std_logic_1164                    | ieee         |      |                         | <unavailable>
+NUMERIC_STD                       | ieee         |      |                         | <unavailable>
 --------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------------
@@ -46,11 +32,7 @@ subtractor16                      | None
 --------------------------------------------------------------------------------------------------------
 
 
-<<<<<<< HEAD
-Simulation Options: asim -O5 +access +r +m+Subtractor16 Subtractor16 structural
-=======
 Simulation Options: asim -O5 +access +r +m+subtractor16_tb subtractor16_tb TB_ARCHITECTURE
->>>>>>> 12e04fe875e40bda35f4c7b212ae9f89715cc241
 
 
 The performance of simulation is reduced. Version EDU Edition

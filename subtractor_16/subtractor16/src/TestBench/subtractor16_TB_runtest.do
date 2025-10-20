@@ -1,6 +1,4 @@
 SetActiveLib -work
-comp -include "$dsn\src\halfadder.vhd" 
-comp -include "$dsn\src\fulladder.vhd" 
 comp -include "$dsn\src\subtractor16.vhd" 
 comp -include "$dsn\src\TestBench\subtractor16_TB.vhd" 
 asim +access +r TESTBENCH_FOR_subtractor16 
