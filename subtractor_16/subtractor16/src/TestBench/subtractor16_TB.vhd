@@ -40,9 +40,9 @@ begin
 	-- Add your stimulus here ... 
 	stim_proc: process
 begin
-    A <= "0000000000000111"; 
-    B <= "0000000000000001"; 
-    wait for 10 ns;
+    A <= "0000101100000111"; 
+    B <= "0000001100000010"; 
+    wait for 160 ns;
     wait;
 
 end process;

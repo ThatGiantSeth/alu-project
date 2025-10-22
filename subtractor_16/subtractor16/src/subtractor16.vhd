@@ -34,10 +34,11 @@ begin
 		notB: notgate port map (a => B(i), r => Binv(i));	 
 	end generate;
 	--for twos complement
-	carry(0) <= '1';	 
+	carry(0) <= '1';
+
 	
 	create_FAs : for i in 0 to 15 generate
-		FA:	fulladder port map(A => A(i), B => Binv(i), Cin => carry(i), Sum => Diff(i), Cout => carry(i));
+		FA:	fulladder port map(A => A(i), B => Binv(i), Cin => carry(i), Sum => Diff(i), Cout => carry(i+1));
 	end generate;
 	
 	Cout <= carry(16);
