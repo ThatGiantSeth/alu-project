@@ -1,15 +1,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.All;
 
-entity andgate is
+entity xorgate is
 	Port(
 	a	:	in std_logic;
 	b	:	in std_logic;
-	z	: 	out std_logic
+	r	: 	out std_logic
 	);
-end andgate;
+end xorgate;
 
-architecture behavioral of andgate is
+architecture behavioral of xorgate is
 begin
-	z <= a and b;
+	r <= a xor b;
 end behavioral;

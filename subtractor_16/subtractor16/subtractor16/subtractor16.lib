@@ -1,81 +1,75 @@
-timestamp=1761091334898
+timestamp=1761097151342
 
 [~A]
-ModifyID=20
+ModifyID=30
 Version=74
 
 [~MFT]
-0=10|0subtractor16.mgf|28196|20173
-1=4|1subtractor16.mgf|46763|40285
-3=2|3subtractor16.mgf|3270|2406
+0=10|0subtractor16.mgf|33112|26052
+1=4|1subtractor16.mgf|54601|50904
+3=2|3subtractor16.mgf|3852|2988
 
 [fulladder]
-A/structural=21|../src/fulladder.vhd|13|1*5811
 BinI32/structural=3*1000
 I=0*2650
 I/structural=0*6687
 M=11|0|ve8|1760971204469|../src/fulladder.vhd|0*2291*0x7d42a848355bac157dd0e9772c8ffb8616b9a2be|0*2567*0x23b75c12e3e89f2ef000564498faa8c2
-M/structural=21|0|ve8|1760971385447|../src/fulladder.vhd|0*2852*0xe5482f9b4342650fe2814b2a2bbc0ac449774bf0|0*3253*0x20116f55b147878295aeff36dce7fc50
 R=../src/fulladder.vhd|4
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|c12a13e6fa1dde32095fc858f2c5d0a25fe0f6cc11f37d48b53e35433dff82a00469873d85b8c084dbba3ddc0d82d0cd
 Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb245455fd847569fd6e9dc49bca88cfc7
 
 [halfadder]
-A/structural=21|../src/halfadder.vhd|13|1*5050
 BinI32/structural=3*796
 I=0*1392
 I/structural=0*6474
 M=11|0|ve8|1760971204366|../src/halfadder.vhd|0*1051*0x6e34c6ddba7cc3cc996ece0e6690d23cb70f71c4|0*1309*0x23b75c12e3e89f2ef000564498faa8c2
-M/structural=21|0|ve8|1760971385391|../src/halfadder.vhd|0*1594*0xa6ca4f9a287ff161f53ff97887a9bdf0303fc8f9|0*1789*0x20116f55b147878295aeff36dce7fc50
 R=../src/halfadder.vhd|4
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|df6222d8a183af79470a1a0a11a371eb1093b6854768ed9664634ca9f9371c7b95dffcc1baef69625914507045a6892e
 Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb6ab53828b3ff24152eabf24c225d825b
 
 [notgate]
-A/behavioral=21|../src/notgate.vhd|9|1*9456
 BinI32/behavioral=3*1417
 I=0*4051
 I/behavioral=0*7254
 M=11|0|ve8|1760971204639|../src/notgate.vhd|0*3770*0xd6ba92e955945ba0a1195feb79d1413fe37c595b|0*3972*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=21|0|ve8|1760971385571|../src/notgate.vhd|0*4251*0x90c0fd551d05712f81889d25bff11b4b4e0b6f80|0*4416*0x20116f55b147878295aeff36dce7fc50
 R=../src/notgate.vhd|4
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|16ab8bfb4440dc9091a7bcd8847f65d926527262ddaa47cb266f3a3c4d9b973aa39c0a7509f73de15f0c21ea7f4b615d
 Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff46936ba0d85f829814d18b61acbea8e20
 
 [subtractor16]
-A/structural=21|../src/subtractor16.vhd|14|1*43084
-BinI32/structural=3*2962
-I=0*17102
-I/structural=0*26853
-M=11|0|ve8|1761090481396|../src/subtractor16.vhd|0*16705*0x51d5652795b3a3cfd6241dc06f280daea4a23d2c|0*17013*0x23b75c12e3e89f2ef000564498faa8c2
-M/structural=21|0|ve8|1761091134278|../src/subtractor16.vhd|0*24552*0x56fa03799d9e6ccfd6c07f8837af35d99d4b2d22|0*25233*0x20116f55b147878295aeff36dce7fc50
-R=../src/subtractor16.vhd|5
-Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|64fa53c22991cd53ac08f44badd72d6ffa8440b0e477715b7d2dbc7249a2cbb09747576e0e4208e94313cc5058aec250
-Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb115c4fd99effacdd06d520f9cfdd18ba
+A/structural=21|../src/subtractor16.vhd|18|1*47226
+BinI32/structural=3*3544
+I=0*29066
+I/structural=0*30093
+M=11|0|ve8|1761097064769|../src/subtractor16.vhd|0*28591*0xfcd27ec2e9cf63388b1601ce3d4176b43d44d91f|0*28977*0x23b75c12e3e89f2ef000564498faa8c2
+M/structural=21|0|ve8|1761097064771|../src/subtractor16.vhd|0*29309*0x46ea75df43f5f1dc53ee6fb57b095e6a422fc377|0*29990*0x20116f55b147878295aeff36dce7fc50
+R=../src/subtractor16.vhd|9
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|64fa53c22991cd53ac08f44badd72d6ffa8440b0e477715b7d2dbc7249a2cbb02231da1ddda6964505327525846818dd
+Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb5f6ab35497f9dc22af71eeaafc011659
 
 [subtractor16_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/subtractor16_TB.vhd|10|1*45387
-BinI32/tb_architecture=3*3270
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/subtractor16_TB.vhd|10|1*53225
+BinI32/tb_architecture=3*3852
 I=0*7935
-I/tb_architecture=I/TB_ARCHITECTURE 0*27891
+I/tb_architecture=I/TB_ARCHITECTURE 0*32808
 M=11|0|ve8|1760971494808|../src/TestBench/subtractor16_TB.vhd|0*7601*0x35fa1c471d46a5cba45ef7ba8294237ae560afcb|0*7830*0x23b75c12e3e89f2ef000564498faa8c2
-M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve8|1761091334875|../src/TestBench/subtractor16_TB.vhd|0*27174*0xa0b50ea385f95cf9ee79de5e56dbf2ae85f6f3b3|0*27767*0x20116f55b147878295aeff36dce7fc50
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve8|1761097151315|../src/TestBench/subtractor16_TB.vhd|0*32091*0xabeb00d20a54959bfc4760aa34eb6d81c7864643|0*32684*0x20116f55b147878295aeff36dce7fc50
 R=../src/TestBench/subtractor16_TB.vhd|7
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35bcca379061f04586b39ee58d664f224457a14d5cdfe8886a7715780fe9ca9fdfe33607469987d46b5559fecab37f6f
-Version/tb_architecture=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea6babaa7742cd151967b3b0afe17dc697
+Version/tb_architecture=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea463a549c24b8040493fc2cf288eacac4
 
 [testbench_for_subtractor16]
 Configures=subtractor16_tb.TB_ARCHITECTURE
-E=1*46763
-I=0*28196
-M=2|0|ve8|1761091334881|../src/TestBench/subtractor16_TB.vhd|0*9203*0xde37afbdcb262aa0234b5ddb91bb861ceb697a7a|0*9529*0x20116f55b147878295aeff36dce7fc50
+E=1*54601
+I=0*33112
+M=2|0|ve8|1761097151322|../src/TestBench/subtractor16_TB.vhd|0*9203*0xde37afbdcb262aa0234b5ddb91bb861ceb697a7a|0*9529*0x20116f55b147878295aeff36dce7fc50
 R=../src/TestBench/subtractor16_TB.vhd|52
-Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5d00763da7cfccb821d945b83e74d65dbef2c681ec9862228b0266a1a726bf38da2d41e7dbfeec340bb9902afdcd6b8d8
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5d00763da7cfccb821d945b83e74d65dbef2c681ec9862228b0266a1a726bf38dcf7d24ba686c9faccb1bae3c7c7073d1
 
 [~U]
 fulladder=11|0*2099|
 halfadder=11|0*861|
 notgate=11|0*3596|
-subtractor16=11|0*16484|
+subtractor16=11|0*28370|
 subtractor16_tb=11|0*7465|
 testbench_for_subtractor16=TESTBENCH_FOR_subtractor16 2||

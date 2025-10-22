@@ -40,8 +40,8 @@ begin
 			Cout => Cout
 		);
 
-	-- Add your stimulus here ...
-	stim_proc: process
+	-- Add your stimulus here ...  
+		stim_proc: process
 begin	
 	--A <= to_signed(0,16);
 	--B <= to_signed(0,16);
@@ -53,7 +53,6 @@ begin
 	
    wait;
 end process;
-
 
 end TB_ARCHITECTURE;
 

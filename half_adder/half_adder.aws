@@ -10,3 +10,4 @@ order=1
 macro=
 [Expand]
 halfadder=1
+gatelib=0

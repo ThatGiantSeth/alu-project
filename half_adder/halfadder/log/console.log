@@ -1,2 +1,9 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
+# Library Manager: Remove mapping "gatelib" of library file "C:/Users/Seth/Desktop/aldec-fall2025/alu-project/gatelib/gatelib/gatelib/gatelib.lib".
+# Library Manager: Local library "gatelib" detached.
+# Library Manager: Library "gatelib" attached.
+acom -O3 -e 100 -work halfadder -2002  $dsn/src/halfadder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/half_adder/halfadder/src/halfadder.vhd
+# Compile Entity "halfadder"
+# Compile Architecture "structural" of Entity "halfadder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]

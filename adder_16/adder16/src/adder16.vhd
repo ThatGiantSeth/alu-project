@@ -1,6 +1,8 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+library fulladder;
+use fulladder.fulladder;
 
 entity Adder16 is
 	Port(

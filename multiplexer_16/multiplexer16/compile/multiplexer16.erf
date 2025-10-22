@@ -3,4 +3,4 @@ MESSAGE "File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/m
 MESSAGE "Compile Entity "multiplexer16_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "multiplexer16_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_multiplexer16"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

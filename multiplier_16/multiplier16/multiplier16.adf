@@ -30,24 +30,20 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=multiplier16_tb|TB_ARCHITECTURE|0   
+HierarchyInformation=multiplier16_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
+[Groups]
+TestBench=1
+
 [Files]
-/halfadder.vhd=-1
-/fulladder.vhd=-1
 /multiplier16.vhd=-1
 TestBench/multiplier16_TB.vhd=-1
 TestBench/multiplier16_TB_runtest.do=-1
 
 [Files.Data]
-.\src\halfadder.vhd=VHDL Source Code
-.\src\fulladder.vhd=VHDL Source Code
 .\src\multiplier16.vhd=VHDL Source Code
 .\src\TestBench\multiplier16_TB.vhd=VHDL Test Bench
 .\src\TestBench\multiplier16_TB_runtest.do=Macro
 
-[Groups]
-
-TestBench=1

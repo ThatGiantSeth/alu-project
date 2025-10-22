@@ -9,10 +9,12 @@ compile=multiplexer16
 
 [Library]
 multiplexer16=.\multiplexer16\multiplexer16.lib
+gatelib=.\..\..\gatelib\gatelib\gatelib\gatelib.lib
 
 [$LibMap$]
 multiplexer16=.
 Active_lib=
+gatelib=.
 
 [Settings]
 FLOW_TYPE=HDL
@@ -31,7 +33,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=multiplexer1|structural|0 multiplexer16_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=multiplexer16_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -41,20 +43,12 @@ TestBench=1
 [Files]
 /multiplexer16.vhd=-1
 /multiplexer1.vhd=-1
-/notgate.vhd=-1
-/and3gate.vhd=-1
-/or5gate.vhd=-1
-/andgate.vhd=-1
 TestBench/multiplexer16_TB.vhd=-1
 TestBench/multiplexer16_TB_runtest.do=-1
 
 [Files.Data]
 .\src\multiplexer16.vhd=VHDL Source Code
 .\src\multiplexer1.vhd=VHDL Source Code
-.\src\notgate.vhd=VHDL Source Code
-.\src\and3gate.vhd=VHDL Source Code
-.\src\or5gate.vhd=VHDL Source Code
-.\src\andgate.vhd=VHDL Source Code
 .\src\TestBench\multiplexer16_TB.vhd=VHDL Test Bench
 .\src\TestBench\multiplexer16_TB_runtest.do=Macro
 

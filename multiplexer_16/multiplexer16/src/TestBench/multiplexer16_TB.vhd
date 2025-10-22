@@ -1,6 +1,6 @@
 library ieee;
 use ieee.NUMERIC_STD.all;
-use ieee.std_logic_1164.all;
+use ieee.std_logic_1164.all; 
 
 	-- Add your library and packages declaration here ...
 
@@ -54,7 +54,7 @@ begin
 	in2 <= ("0000000000000010"); 	
 	in3 <= ("0000000000000011"); 
 	in4 <= ("0000000000000100"); 
-	S <= "011";
+	S <= "010";
     wait for 10 ns;	 
   	wait; 
 end process;

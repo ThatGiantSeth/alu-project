@@ -9,10 +9,16 @@ compile=adder16
 
 [Library]
 adder16=.\adder16\adder16.lib
+fulladder=.\..\..\full_adder\fulladder\fulladder\fulladder.lib
+halfadder=.\..\..\half_adder\halfadder\halfadder\halfadder.lib
+gatelib=.\..\..\gatelib\gatelib\gatelib\gatelib.lib
 
 [$LibMap$]
 adder16=.
 Active_lib=
+fulladder=.
+halfadder=.
+gatelib=.
 
 [Settings]
 FLOW_TYPE=HDL
@@ -30,7 +36,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=adder16_tb|TB_ARCHITECTURE|0 fulladder|structural|0  
+HierarchyInformation=adder16_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -38,15 +44,11 @@ Selected=
 TestBench=1
 
 [Files]
-/halfadder.vhd=-1
-/fulladder.vhd=-1
 /adder16.vhd=-1
 TestBench/adder16_TB.vhd=-1
 TestBench/adder16_TB_runtest.do=-1
 
 [Files.Data]
-.\src\halfadder.vhd=VHDL Source Code
-.\src\fulladder.vhd=VHDL Source Code
 .\src\adder16.vhd=VHDL Source Code
 .\src\TestBench\adder16_TB.vhd=VHDL Test Bench
 .\src\TestBench\adder16_TB_runtest.do=Macro

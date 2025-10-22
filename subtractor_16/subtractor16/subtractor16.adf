@@ -9,10 +9,16 @@ compile=subtractor16
 
 [Library]
 subtractor16=.\subtractor16\subtractor16.lib
+gatelib=.\..\..\gatelib\gatelib\gatelib\gatelib.lib
+halfadder=.\..\..\half_adder\halfadder\halfadder\halfadder.lib
+fulladder=.\..\..\full_adder\fulladder\fulladder\fulladder.lib
 
 [$LibMap$]
 subtractor16=.
 Active_lib=
+gatelib=.
+halfadder=.
+fulladder=.
 
 [Settings]
 FLOW_TYPE=HDL
@@ -31,8 +37,8 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=subtractor16_tb|TB_ARCHITECTURE|0  
-HierarchyInformation=subtractor16|structural|0
+HierarchyInformation=subtractor16_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=subtractor16_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -40,18 +46,12 @@ Selected=
 TestBench=1
 
 [Files]
-/halfadder.vhd=-1
-/fulladder.vhd=-1
 /subtractor16.vhd=-1
-/notgate.vhd=-1
 TestBench/subtractor16_TB.vhd=-1
 TestBench/subtractor16_TB_runtest.do=-1
 
 [Files.Data]
-.\src\halfadder.vhd=VHDL Source Code
-.\src\fulladder.vhd=VHDL Source Code
 .\src\subtractor16.vhd=VHDL Source Code
-.\src\notgate.vhd=VHDL Source Code
 .\src\TestBench\subtractor16_TB.vhd=VHDL Test Bench
 .\src\TestBench\subtractor16_TB_runtest.do=Macro
 

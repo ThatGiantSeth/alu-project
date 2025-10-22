@@ -1,7 +1,3 @@
 .\src\multiplexer16.vhd
 .\src\multiplexer1.vhd
-.\src\notgate.vhd
-.\src\and3gate.vhd
-.\src\or5gate.vhd
-.\src\andgate.vhd
 .\src\TestBench\multiplexer16_TB.vhd

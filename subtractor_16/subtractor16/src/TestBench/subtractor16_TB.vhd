@@ -37,11 +37,11 @@ begin
 			Cout => Cout
 		);
 
-	-- Add your stimulus here ... 
-	stim_proc: process
+	-- Add your stimulus here ...	
+		stim_proc: process
 begin
-    A <= "0000101100000111"; 
-    B <= "0000001100000010"; 
+    A <= "1000000000000111"; 
+    B <= "1000000000000010"; 
     wait for 160 ns;
     wait;
 

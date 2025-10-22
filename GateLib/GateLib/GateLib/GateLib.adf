@@ -1,0 +1,8 @@
+[Library]
+GateLib=.\GateLib\GateLib.LIB
+[$LibMap$]
+GateLib=.
+[Configurations]
+compile=GateLib
+[Project]
+version=4

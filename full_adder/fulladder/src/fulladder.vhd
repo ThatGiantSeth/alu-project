@@ -1,5 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+library halfadder;
+use halfadder.halfadder;
 
 entity fulladder is
 	Port(

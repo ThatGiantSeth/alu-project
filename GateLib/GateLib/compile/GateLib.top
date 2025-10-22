@@ -1,0 +1,5 @@
+andgate ENTITY
+or5gate ENTITY
+xorgate ENTITY
+notgate ENTITY
+and3gate ENTITY
