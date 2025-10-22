@@ -1,55 +1,71 @@
-# Library Manager: Library "adder16" attached.
-# Library Manager: Library "fulladder" attached.
-# Library Manager: Library "gatelib" attached.
-# Library Manager: Library "halfadder" attached.
-# Library Manager: Library "multiplexer16" attached.
-# Library Manager: Library "multiplier16" attached.
-# Library Manager: Library "subtractor16" attached.
-open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\subtractor_16\subtractor16\src\subtractor16.vhd}
-open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\adder_16\adder16\src\adder16.vhd}
-open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplier_16\multiplier16\src\multiplier16.vhd}
-open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16\src\multiplexer16.vhd}
-acom -reorder -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "alu"
-# Top-level unit(s) detected:
-# Entity => alu
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
 # ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0081 alu.vhd (74): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
+# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
 # ELBREAD: Elaboration time 0.0 [s].
-open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16\src\multiplexer16.vhd}
-open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\adder_16\adder16\src\adder16.vhd}
-open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\GateLib\GateLib\src\notgate.vhd}
+open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\subtractor_16\subtractor16\src\subtractor16.vhd}
 acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
 # Compile Entity "alu"
 # Compile Architecture "structural" of Entity "alu"
-# Error: COMP96_0122: src/alu.vhd : (68, 2): Symbol "create_adder" has already been declared in this scope.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "alu"
-# Error: COMP96_0100: src/alu.vhd : (69, 44): Actual parameter type in port map does not match the type of the formal port 'A'.
-# Error: COMP96_0100: src/alu.vhd : (69, 52): Actual parameter type in port map does not match the type of the formal port 'B'.
-# Error: COMP96_0100: src/alu.vhd : (69, 60): Actual parameter type in port map does not match the type of the formal port 'Product'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  46.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
-# Compile Entity "alu"
-# Compile Architecture "structural" of Entity "alu"
-# Error: COMP96_0100: src/alu.vhd : (69, 44): Actual parameter type in port map does not match the type of the formal port 'A'.
-# Error: COMP96_0100: src/alu.vhd : (69, 52): Actual parameter type in port map does not match the type of the formal port 'B'.
-# Error: COMP96_0100: src/alu.vhd : (69, 60): Actual parameter type in port map does not match the type of the formal port 'Product'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0081 alu.vhd (74): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
+# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (74): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=261 elab2=5851 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  6:18 PM, Wednesday, October 22, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.

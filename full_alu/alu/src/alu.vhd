@@ -23,8 +23,9 @@ end alu;
 
 architecture structural of alu is 	
 
-signal sum, diff, prod, Binv	: signed(15 downto 0);	
-signal cout, over				: std_logic; --over is a temp variable (need to figure out overflow)
+signal sum, diff, prod16, Binv	: signed(15 downto 0);	
+signal prod32				: signed(31 downto 0);
+signal coutA, coutS, over				: std_logic; --over is a temp variable (need to figure out overflow)
 signal passA, passB		: signed(15 downto 0);
 
 component adder16 is
@@ -35,13 +36,22 @@ component adder16 is
 	Sum:	out signed(15 downto 0);
 	Cout:	out std_logic
 	);
+end component;	
+
+component subtractor16 is
+	Port(
+	A	:	in signed(15 downto 0);
+	B	:	in signed(15 downto 0);
+	Diff:	out signed(15 downto 0);
+	Cout:	out std_logic
+	);
 end component;
 
 component multiplier16 is
 	Port(
-	A	:	in std_logic_vector(15 downto 0);
-	B	:	in std_logic_vector(15 downto 0);
-	Product:out std_logic_vector(31 downto 0);
+	A	:	in signed(15 downto 0);
+	B	:	in signed(15 downto 0);
+	Product:out signed(31 downto 0);
 	Ovf	: out std_logic
 	);
 end component;
@@ -64,11 +74,21 @@ begin
 		bnot : notgate port map (a => B(i), r => Binv(i));
 	end generate;
 	
-	create_adder: adder16 port map (A => A, B => B, Cin => '0', Sum => sum, Cout => cout);
-	create_subtractor: adder16 port map (A => A, B => Binv, Cin => '1', Sum => sum, Cout => cout);
-	create_multiplier: multiplier16 port map (A => A, B => B, Product(15 downto 0) => prod, Ovf => over);
+	create_adder: adder16 port map (A => A, B => B, Cin => '0', Sum => sum, Cout => coutA);
+	create_subtractor: adder16 port map (A => A, B => Binv, Cin => '1', Sum => diff, Cout => coutS);
+	create_multiplier: multiplier16 port map (A => A, B => B, Product => prod32, Ovf => over);  
+	prod16 <= prod32(15 downto 0);
 	passA <= A;
 	passB <= B;
 	
+	create_mux: multiplexer16 port map (
+	S => Op, 
+	in0 => sum, 
+	in1 => diff, 
+	in2 => prod16, 
+	in3 => passA, 
+	in4 => passB, 
+	R => Result
+	);
 	
 end structural;

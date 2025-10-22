@@ -4,9 +4,9 @@ use IEEE.numeric_std.all;
 
 entity multiplier16 is
 	Port(
-	A	:	in std_logic_vector(15 downto 0);
-	B	:	in std_logic_vector(15 downto 0);
-	Product:out std_logic_vector(31 downto 0);
+	A	:	in signed(15 downto 0);
+	B	:	in signed(15 downto 0);
+	Product:out signed(31 downto 0);
 	Ovf	: out std_logic
 	);
 end multiplier16;
@@ -47,6 +47,6 @@ architecture behavioral of multiplier16 is
 
 		end process;
 		
-		Product <= std_logic_vector(result);
+		Product <= result;
 	end behavioral;
 

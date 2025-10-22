@@ -3,4 +3,4 @@ MESSAGE "File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/su
 MESSAGE "Compile Entity "subtractor16_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "subtractor16_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_subtractor16"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

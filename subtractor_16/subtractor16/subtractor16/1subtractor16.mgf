@@ -1925,7 +1925,7 @@ I 000045 55 418 0 testbench_for_subtractor16
 	)
 	(_use(std(standard))(ieee(NUMERIC_STD))(ieee(std_logic_1164)))
 )
-V 000056 55 1320          1761097151316 TB_ARCHITECTURE
+I 000056 55 1320          1761097151316 TB_ARCHITECTURE
 (_unit VHDL(subtractor16_tb 0 7(tb_architecture 0 10))
 	(_version ve8)
 	(_time 1761097151317 2025.10.21 21:39:11)
@@ -1974,13 +1974,77 @@ V 000056 55 1320          1761097151316 TB_ARCHITECTURE
 	)
 	(_model . TB_ARCHITECTURE 1 -1)
 )
-V 000045 55 418 0 testbench_for_subtractor16
+I 000045 55 418 0 testbench_for_subtractor16
 (_configuration VHDL (testbench_for_subtractor16 0 52 (subtractor16_tb))
 	(_version ve8)
 	(_time 1761097151321 2025.10.21 21:39:11)
 	(_source(\../src/TestBench/subtractor16_TB.vhd\))
 	(_parameters tan)
 	(_code 27252623257170302326357d7321722124212f2271)
+	(_arch TB_ARCHITECTURE
+		(_inst UUT
+			(_ent . subtractor16 structural
+			)
+		)
+	)
+	(_use(std(standard))(ieee(NUMERIC_STD))(ieee(std_logic_1164)))
+)
+V 000056 55 1320          1761171062615 TB_ARCHITECTURE
+(_unit VHDL(subtractor16_tb 0 7(tb_architecture 0 10))
+	(_version ve8)
+	(_time 1761171062616 2025.10.22 18:11:02)
+	(_source(\../src/TestBench/subtractor16_TB.vhd\))
+	(_parameters tan)
+	(_code 4f4a494c1c18195848495d151f494c484b4919484d)
+	(_ent
+		(_time 1760971494808)
+	)
+	(_comp
+		(subtractor16
+			(_object
+				(_port(_int A 0 0 14(_ent (_in))))
+				(_port(_int B 0 0 15(_ent (_in))))
+				(_port(_int Diff 0 0 16(_ent (_out))))
+				(_port(_int Cout -1 0 17(_ent (_out))))
+			)
+		)
+	)
+	(_inst UUT 0 32(_comp subtractor16)
+		(_port
+			((A)(A))
+			((B)(B))
+			((Diff)(Diff))
+			((Cout)(Cout))
+		)
+		(_use(_ent . subtractor16)
+		)
+	)
+	(_object
+		(_type(_int ~SIGNED{15~downto~0}~13 0 14(_array -1((_dto i 15 i 0)))))
+		(_type(_int ~SIGNED{15~downto~0}~132 0 21(_array -1((_dto i 15 i 0)))))
+		(_sig(_int A 1 0 21(_arch(_uni))))
+		(_sig(_int B 1 0 22(_arch(_uni))))
+		(_sig(_int Diff 1 0 24(_arch(_uni))))
+		(_sig(_int Cout -1 0 25(_arch(_uni))))
+		(_prcs
+			(stim_proc(_arch 0 0 41(_prcs(_wait_for)(_trgt(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard))(ieee(NUMERIC_STD)))
+	(_static
+		(33686019 33686018 33686018 50529026)
+		(33686019 33686018 33686018 33751554)
+	)
+	(_model . TB_ARCHITECTURE 1 -1)
+)
+V 000045 55 418 0 testbench_for_subtractor16
+(_configuration VHDL (testbench_for_subtractor16 0 52 (subtractor16_tb))
+	(_version ve8)
+	(_time 1761171062629 2025.10.22 18:11:02)
+	(_source(\../src/TestBench/subtractor16_TB.vhd\))
+	(_parameters tan)
+	(_code 5e5b5f5d0e0809495a5f4c040a580b585d58565b08)
 	(_arch TB_ARCHITECTURE
 		(_inst UUT
 			(_ent . subtractor16 structural

@@ -4,56 +4,56 @@ use ieee.std_logic_1164.all;
 
 	-- Add your library and packages declaration here ...
 
-entity multiplier16_tb is
-end multiplier16_tb;
+entity alu_tb is
+end alu_tb;
 
-architecture TB_ARCHITECTURE of multiplier16_tb is
+architecture TB_ARCHITECTURE of alu_tb is
 	-- Component declaration of the tested unit
-	component multiplier16
+	component alu
 	port(
 		A : in SIGNED(15 downto 0);
 		B : in SIGNED(15 downto 0);
-		Product : out SIGNED(31 downto 0);
-		Ovf : out STD_LOGIC );
+		Op : in STD_LOGIC_VECTOR(2 downto 0);
+		Result : out SIGNED(15 downto 0) );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
 	signal A : SIGNED(15 downto 0);
 	signal B : SIGNED(15 downto 0);
+	signal Op : STD_LOGIC_VECTOR(2 downto 0);
 	-- Observed signals - signals mapped to the output ports of tested entity
-	signal Product : SIGNED(31 downto 0);
-	signal Ovf : STD_LOGIC;
+	signal Result : SIGNED(15 downto 0);
 
 	-- Add your code here ...
 
 begin
 
 	-- Unit Under Test port map
-	UUT : multiplier16
+	UUT : alu
 		port map (
 			A => A,
 			B => B,
-			Product => Product,
-			Ovf => Ovf
+			Op => Op,
+			Result => Result
 		);
 
 	-- Add your stimulus here ...
 		stim_proc: process
 begin	
-    A <= ("1111111111101011"); 
-    B <= ("0000000000001000"); 
-    wait for 10 ns;	 
+    A <= ("0000000000000111"); 
+    B <= ("0000000000000100"); 
+	Op <= "001";
 	
 	
    wait;
 end process;
 end TB_ARCHITECTURE;
 
-configuration TESTBENCH_FOR_multiplier16 of multiplier16_tb is
+configuration TESTBENCH_FOR_alu of alu_tb is
 	for TB_ARCHITECTURE
-		for UUT : multiplier16
-			use entity work.multiplier16(behavioral);
+		for UUT : alu
+			use entity work.alu(structural);
 		end for;
 	end for;
-end TESTBENCH_FOR_multiplier16;
+end TESTBENCH_FOR_alu;
 

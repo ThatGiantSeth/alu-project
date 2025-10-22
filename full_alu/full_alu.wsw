@@ -1,10 +1,13 @@
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\alu\src\alu.vhd|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\alu\src/alu.vhd|]
 TemplateId=0
 ActiveDocument=1
 tab=lu
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\multiplexer_16\multiplexer16\src\multiplexer16.vhd|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\alu\src/TestBench/alu_TB.vhd|]
 TemplateId=0
 tab=lu
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\adder_16\adder16\src\adder16.vhd|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\adder_16\adder16/src/adder16.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\subtractor_16\subtractor16\src\subtractor16.vhd|]
 TemplateId=0
 tab=lu
