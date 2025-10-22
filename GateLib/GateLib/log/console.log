@@ -1,2 +1,44 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work GateLib -2002  $dsn/src/and3gate.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/and3gate.vhd
+# Compile Entity "and3gate"
+# Compile Architecture "behavioral" of Entity "and3gate"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work GateLib -2002  $dsn/src/andgate.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/andgate.vhd
+# Compile Entity "andgate"
+# Compile Architecture "behavioral" of Entity "andgate"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work GateLib -2002  $dsn/src/notgate.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/notgate.vhd
+# Compile Entity "notgate"
+# Compile Architecture "behavioral" of Entity "notgate"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work GateLib -2002  $dsn/src/or5gate.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/or5gate.vhd
+# Compile Entity "or5gate"
+# Compile Architecture "structural" of Entity "or5gate"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work GateLib -2002  $dsn/src/and3gate.vhd $dsn/src/andgate.vhd $dsn/src/notgate.vhd $dsn/src/or5gate.vhd $dsn/src/xorgate.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/and3gate.vhd
+# Compile Entity "and3gate"
+# Compile Architecture "behavioral" of Entity "and3gate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/andgate.vhd
+# Compile Entity "andgate"
+# Compile Architecture "behavioral" of Entity "andgate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/notgate.vhd
+# Compile Entity "notgate"
+# Compile Architecture "behavioral" of Entity "notgate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/or5gate.vhd
+# Compile Entity "or5gate"
+# Compile Architecture "structural" of Entity "or5gate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/GateLib/GateLib/src/xorgate.vhd
+# Compile Entity "xorgate"
+# Compile Architecture "behavioral" of Entity "xorgate"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]

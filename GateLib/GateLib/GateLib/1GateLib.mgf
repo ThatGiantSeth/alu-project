@@ -1,4 +1,4 @@
-V 000051 55 639           1761094898685 behavioral
+I 000051 55 639           1761094898685 behavioral
 (_unit VHDL(and3gate 0 4(behavioral 0 11))
 	(_version ve8)
 	(_time 1761094898686 2025.10.21 21:01:38)
@@ -21,7 +21,7 @@ V 000051 55 639           1761094898685 behavioral
 	(_use(ieee(std_logic_1164))(std(standard)))
 	(_model . behavioral 1 -1)
 )
-V 000051 55 597           1761094898726 behavioral
+I 000051 55 597           1761094898726 behavioral
 (_unit VHDL(andgate 0 4(behavioral 0 12))
 	(_version ve8)
 	(_time 1761094898727 2025.10.21 21:01:38)
@@ -43,7 +43,7 @@ V 000051 55 597           1761094898726 behavioral
 	(_use(ieee(std_logic_1164))(std(standard)))
 	(_model . behavioral 1 -1)
 )
-V 000051 55 593           1761094898767 behavioral
+I 000051 55 593           1761094898767 behavioral
 (_unit VHDL(notgate 0 4(behavioral 0 9))
 	(_version ve8)
 	(_time 1761094898768 2025.10.21 21:01:38)
@@ -64,7 +64,7 @@ V 000051 55 593           1761094898767 behavioral
 	(_use(ieee(std_logic_1164))(std(standard)))
 	(_model . behavioral 1 -1)
 )
-V 000051 55 716           1761094898813 structural
+I 000051 55 716           1761094898813 structural
 (_unit VHDL(or5gate 0 4(structural 0 9))
 	(_version ve8)
 	(_time 1761094898814 2025.10.21 21:01:38)
@@ -89,7 +89,7 @@ V 000051 55 716           1761094898813 structural
 	(_use(ieee(std_logic_1164))(std(standard)))
 	(_model . structural 1 -1)
 )
-V 000051 55 597           1761094898854 behavioral
+I 000051 55 597           1761094898854 behavioral
 (_unit VHDL(xorgate 0 4(behavioral 0 12))
 	(_version ve8)
 	(_time 1761094898855 2025.10.21 21:01:38)
@@ -98,6 +98,210 @@ V 000051 55 597           1761094898854 behavioral
 	(_code 82d38c8cd6d4d49485d193d9d78487858a84d48580)
 	(_ent
 		(_time 1761094898844)
+	)
+	(_object
+		(_port(_int a -1 0 6(_ent(_in))))
+		(_port(_int b -1 0 7(_ent(_in))))
+		(_port(_int r -1 0 8(_ent(_out))))
+		(_prcs
+			(line__14(_arch 0 0 14(_assignment(_trgt(2))(_sens(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . behavioral 1 -1)
+)
+I 000051 55 639           1761144032002 behavioral
+(_unit VHDL(and3gate 0 4(behavioral 0 11))
+	(_version ve8)
+	(_time 1761144032003 2025.10.22 10:40:32)
+	(_source(\../src/and3gate.vhd\))
+	(_parameters tan)
+	(_code fda9fcadfcaaadeefeafeaa7adfaf9fbf8fbfcfba8)
+	(_ent
+		(_time 1761094898675)
+	)
+	(_object
+		(_port(_int a -1 0 6(_ent(_in))))
+		(_port(_int b -1 0 6(_ent(_in))))
+		(_port(_int c -1 0 6(_ent(_in))))
+		(_port(_int r -1 0 7(_ent(_out))))
+		(_prcs
+			(line__13(_arch 0 0 13(_assignment(_trgt(3))(_sens(0)(1)(2)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . behavioral 1 -1)
+)
+I 000051 55 597           1761144093140 behavioral
+(_unit VHDL(andgate 0 4(behavioral 0 12))
+	(_version ve8)
+	(_time 1761144093141 2025.10.22 10:41:33)
+	(_source(\../src/andgate.vhd\))
+	(_parameters tan)
+	(_code d2dd8580858582c4d581c38987d4d7d4d3d487d4d6)
+	(_ent
+		(_time 1761094898716)
+	)
+	(_object
+		(_port(_int a -1 0 6(_ent(_in))))
+		(_port(_int b -1 0 7(_ent(_in))))
+		(_port(_int r -1 0 8(_ent(_out))))
+		(_prcs
+			(line__14(_arch 0 0 14(_assignment(_trgt(2))(_sens(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . behavioral 1 -1)
+)
+I 000051 55 556           1761144096646 behavioral
+(_unit VHDL(notgate 0 4(behavioral 0 9))
+	(_version ve8)
+	(_time 1761144096647 2025.10.22 10:41:36)
+	(_source(\../src/notgate.vhd\))
+	(_parameters tan)
+	(_code 8dda8c838fdbdd9b8ad99cd6d88b888bd88bdb8a89)
+	(_ent
+		(_time 1761094898756)
+	)
+	(_object
+		(_port(_int a -1 0 5(_ent(_in))))
+		(_port(_int r -1 0 6(_ent(_out))))
+		(_prcs
+			(line__11(_arch 0 0 11(_assignment(_trgt(1))(_sens(0)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . behavioral 1 -1)
+)
+I 000051 55 716           1761144109573 structural
+(_unit VHDL(or5gate 0 4(structural 0 9))
+	(_version ve8)
+	(_time 1761144109574 2025.10.22 10:41:49)
+	(_source(\../src/or5gate.vhd\))
+	(_parameters tan)
+	(_code 07545100025556110053165c520102015100050402)
+	(_ent
+		(_time 1761094898803)
+	)
+	(_object
+		(_port(_int a -1 0 5(_ent(_in))))
+		(_port(_int b -1 0 5(_ent(_in))))
+		(_port(_int c -1 0 5(_ent(_in))))
+		(_port(_int d -1 0 5(_ent(_in))))
+		(_port(_int e -1 0 5(_ent(_in))))
+		(_port(_int r -1 0 6(_ent(_out))))
+		(_prcs
+			(line__11(_arch 0 0 11(_assignment(_trgt(5))(_sens(0)(1)(2)(3)(4)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . structural 1 -1)
+)
+V 000051 55 639           1761144128734 behavioral
+(_unit VHDL(and3gate 0 4(behavioral 0 11))
+	(_version ve8)
+	(_time 1761144128735 2025.10.22 10:42:08)
+	(_source(\../src/and3gate.vhd\))
+	(_parameters tan)
+	(_code dcd88c8eda8b8ccfdf8ecb868cdbd8dad9daddda89)
+	(_ent
+		(_time 1761094898675)
+	)
+	(_object
+		(_port(_int a -1 0 6(_ent(_in))))
+		(_port(_int b -1 0 6(_ent(_in))))
+		(_port(_int c -1 0 6(_ent(_in))))
+		(_port(_int r -1 0 7(_ent(_out))))
+		(_prcs
+			(line__13(_arch 0 0 13(_assignment(_trgt(3))(_sens(0)(1)(2)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . behavioral 1 -1)
+)
+V 000051 55 597           1761144128772 behavioral
+(_unit VHDL(andgate 0 4(behavioral 0 12))
+	(_version ve8)
+	(_time 1761144128773 2025.10.22 10:42:08)
+	(_source(\../src/andgate.vhd\))
+	(_parameters tan)
+	(_code 0a0e590c0e5d5a1c0d591b515f0c0f0c0b0c5f0c0e)
+	(_ent
+		(_time 1761094898716)
+	)
+	(_object
+		(_port(_int a -1 0 6(_ent(_in))))
+		(_port(_int b -1 0 7(_ent(_in))))
+		(_port(_int r -1 0 8(_ent(_out))))
+		(_prcs
+			(line__14(_arch 0 0 14(_assignment(_trgt(2))(_sens(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . behavioral 1 -1)
+)
+V 000051 55 556           1761144128813 behavioral
+(_unit VHDL(notgate 0 4(behavioral 0 9))
+	(_version ve8)
+	(_time 1761144128814 2025.10.22 10:42:08)
+	(_source(\../src/notgate.vhd\))
+	(_parameters tan)
+	(_code 2a2e2d2e2d7c7a3c2d7e3b717f2c2f2c7f2c7c2d2e)
+	(_ent
+		(_time 1761094898756)
+	)
+	(_object
+		(_port(_int a -1 0 5(_ent(_in))))
+		(_port(_int r -1 0 6(_ent(_out))))
+		(_prcs
+			(line__11(_arch 0 0 11(_assignment(_trgt(1))(_sens(0)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . behavioral 1 -1)
+)
+V 000051 55 716           1761144128882 structural
+(_unit VHDL(or5gate 0 4(structural 0 9))
+	(_version ve8)
+	(_time 1761144128883 2025.10.22 10:42:08)
+	(_source(\../src/or5gate.vhd\))
+	(_parameters tan)
+	(_code 787c7c78722a296e7f2c69232d7e7d7e2e7f7a7b7d)
+	(_ent
+		(_time 1761094898803)
+	)
+	(_object
+		(_port(_int a -1 0 5(_ent(_in))))
+		(_port(_int b -1 0 5(_ent(_in))))
+		(_port(_int c -1 0 5(_ent(_in))))
+		(_port(_int d -1 0 5(_ent(_in))))
+		(_port(_int e -1 0 5(_ent(_in))))
+		(_port(_int r -1 0 6(_ent(_out))))
+		(_prcs
+			(line__11(_arch 0 0 11(_assignment(_trgt(5))(_sens(0)(1)(2)(3)(4)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . structural 1 -1)
+)
+V 000051 55 597           1761144128917 behavioral
+(_unit VHDL(xorgate 0 4(behavioral 0 12))
+	(_version ve8)
+	(_time 1761144128918 2025.10.22 10:42:08)
+	(_source(\../src/xorgate.vhd\))
+	(_parameters tan)
+	(_code 9792cd98c6c1c18190c486ccc29192909f91c19095)
+	(_ent
+		(_time 1761094898843)
 	)
 	(_object
 		(_port(_int a -1 0 6(_ent(_in))))

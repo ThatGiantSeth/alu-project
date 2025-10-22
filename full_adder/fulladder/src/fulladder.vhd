@@ -25,5 +25,5 @@ signal sum1, carry1, carry2 : std_logic;
 begin
 	u1 : halfadder port map (a,b,sum1,carry1);
 	u2 : halfadder port map (sum1,cin,sum,carry2);
-	cout <= carry1 OR carry2;
+	cout <= carry1 OR carry2 after 10ns;
 end structural;

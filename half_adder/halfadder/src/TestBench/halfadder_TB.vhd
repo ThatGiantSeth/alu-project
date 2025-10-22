@@ -36,16 +36,22 @@ begin
 			Carry => Carry
 		);
 
-	-- Add your stimulus here ...
+	-- Add your stimulus here ...	   
 	process
-	begin	   
+	begin	  
+		A <= '0';
+		B <= '0';
+		wait for 20ns;	
+		A <= '0';
+		B <= '1';
+		wait for 20ns;
+		A <= '1';
+		B <= '0';
+		wait for 20ns;
 		A <= '1';
 		B <= '1';
-		wait for 10ns;
 		wait;
 	end process;
-	
-	
 
 end TB_ARCHITECTURE;
 

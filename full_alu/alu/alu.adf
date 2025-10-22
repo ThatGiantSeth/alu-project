@@ -7,9 +7,23 @@ Current Config=compile
 compile=alu
 [Library]
 alu=.\alu\alu.lib
+adder16=.\..\..\adder_16\adder16\adder16\adder16.lib
+fulladder=.\..\..\full_adder\fulladder\fulladder\fulladder.lib
+gatelib=.\..\..\gatelib\gatelib\gatelib\gatelib.lib
+halfadder=.\..\..\half_adder\halfadder\halfadder\halfadder.lib
+multiplexer16=.\..\..\multiplexer_16\multiplexer16\multiplexer16\multiplexer16.lib
+multiplier16=.\..\..\multiplier_16\multiplier16\multiplier16\multiplier16.lib
+subtractor16=.\..\..\subtractor_16\subtractor16\subtractor16\subtractor16.lib
 [$LibMap$]
 alu=.
 Active_lib=
+adder16=.
+fulladder=.
+gatelib=.
+halfadder=.
+multiplexer16=.
+multiplier16=.
+subtractor16=.
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -23,6 +37,10 @@ UCF=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=alu|structural|0 
 ShowHide=ShowTopLevel
 Selected=
+[Files]
+/alu.vhd=-1
+[Files.Data]
+.\src\alu.vhd=VHDL Source Code

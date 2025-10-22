@@ -1,0 +1,8 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd" 
+MESSAGE "Compile Entity "alu"" 
+MESSAGE "Compile Architecture "structural" of Entity "alu"" 
+ERROR COMP96_0100: "Actual parameter type in port map does not match the type of the formal port 'A'." "C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd" 69 44
+ERROR COMP96_0100: "Actual parameter type in port map does not match the type of the formal port 'B'." "C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd" 69 52
+ERROR COMP96_0100: "Actual parameter type in port map does not match the type of the formal port 'Product'." "C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd" 69 60
+FAILURE "Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]" 

@@ -1,1 +1,3 @@
-0
+2
+~E 1 "../src/alu.vhd" 16 alu
+~A 1 "../src/alu.vhd" 24 structural

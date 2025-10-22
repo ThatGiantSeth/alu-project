@@ -1,0 +1,9 @@
+30
+~E 1 "../src/fulladder.vhd" 4 fulladder
+~E 1 "../src/halfadder.vhd" 4 halfadder
+~E 1 "../src/notgate.vhd" 4 notgate
+~E 1 "../src/subtractor16.vhd" 9 subtractor16
+~A 1 "../src/subtractor16.vhd" 18 structural
+~E 1 "../src/TestBench/subtractor16_TB.vhd" 7 subtractor16_tb
+~A 1 "../src/TestBench/subtractor16_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "../src/TestBench/subtractor16_TB.vhd" 52 testbench_for_subtractor16

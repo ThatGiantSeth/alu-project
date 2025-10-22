@@ -42,10 +42,37 @@ begin
 	-- Add your stimulus here ...	
 	process
 	begin 
+		a <= '0';
+		b <= '0';
+		cin <= '0';
+		wait for 40ns;	 
+		a <= '0';
+		b <= '0';
+		cin <= '1';
+		wait for 40ns;
+		a <= '0';
+		b <= '1';
+		cin <= '0';
+		wait for 40ns;
+		a <= '0';
+		b <= '1';
+		cin <= '1';
+		wait for 40ns;	 
+		a <= '1';
+		b <= '0';
+		cin <= '0';
+		wait for 40ns;
+		a <= '1';
+		b <= '0';
+		cin <= '1';
+		wait for 40ns; 
+		a <= '1';
+		b <= '1';
+		cin <= '0';
+		wait for 40ns; 
 		a <= '1';
 		b <= '1';
 		cin <= '1';
-		wait for 10ns;
 		wait;
 	end process;
 

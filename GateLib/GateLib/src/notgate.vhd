@@ -8,5 +8,5 @@ end notgate;
 
 architecture behavioral of notgate is
 begin
-  r <= not a;
+  r <= not a after 10ns;
 end behavioral;

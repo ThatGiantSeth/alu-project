@@ -44,6 +44,6 @@ UCF=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=andgate|behavioral|0  
+HierarchyInformation=andgate|behavioral|0   
 ShowHide=ShowTopLevel
 Selected=

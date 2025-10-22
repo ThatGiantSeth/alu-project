@@ -8,5 +8,5 @@ end or5gate;
 
 architecture structural of or5gate is
 begin
-  r <= a or b or c or d or e;
+  r <= a or b or c or d or e after 10ns;
 end structural;

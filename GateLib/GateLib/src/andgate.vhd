@@ -11,5 +11,5 @@ end andgate;
 
 architecture behavioral of andgate is
 begin
-	r <= a and b;
+	r <= a and b after 10ns;
 end behavioral;

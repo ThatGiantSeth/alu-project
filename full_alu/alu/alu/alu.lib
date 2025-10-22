@@ -1,1 +1,24 @@
+timestamp=1761167784805
 
+[~A]
+ModifyID=2
+Version=74
+
+[~MFT]
+0=8|0alu.mgf|3202|1127
+1=2|1alu.mgf|1545|1545
+3=1|3alu.mgf|0|0
+
+[alu]
+A/structural=21|../src/alu.vhd|24|1*1545
+BinI32/structural=3*0
+I=0*743
+I/structural=0*3202
+M=11|0|ve8|1761167096737|../src/alu.vhd|0*213*0x85a9a3bfb28406b89dfff881a1e8fe28ae0d1d3b|0*672*0x23b75c12e3e89f2ef000564498faa8c2
+M/structural=21|0|ve8|1761167784733|../src/alu.vhd|0*2104*0x283374cb7edc74b1e416b9e475a2bf48e571833d|0*3117*0x20116f55b147878295aeff36dce7fc50
+R=../src/alu.vhd|16
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|fdc9c85601beb4171a6a25c637e2168e076ea25565ebf7d8128cfca8b97f28c9
+Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3ebec6dfd76e2703e34673fd7a0d0a8b925
+
+[~U]
+alu=11|0*0|

@@ -1,13 +1,13 @@
-timestamp=1761096647792
+timestamp=1761149803462
 
 [~A]
-ModifyID=25
+ModifyID=29
 Version=74
 
 [~MFT]
-0=7|0fulladder.mgf|13507|7263
-1=2|1fulladder.mgf|14118|12489
-3=1|3fulladder.mgf|1358|710
+0=8|0fulladder.mgf|17868|11349
+1=2|1fulladder.mgf|20411|18782
+3=2|3fulladder.mgf|2026|1179
 
 [andgate]
 BinI32/behavioral=3*711
@@ -19,26 +19,26 @@ Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|79ddce9604d0928de
 Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff44723a670cdaf3ec10bc9d7872c89f3eb
 
 [fulladder]
-A/structural=21|../src/fulladder.vhd|15|1*14118
-BinI32/structural=3*1358
+A/structural=21|../src/fulladder.vhd|15|1*20411
+BinI32/structural=3*2026
 I=0*12809
-I/structural=0*13507
+I/structural=0*17868
 M=11|0|ve8|1761096259342|../src/fulladder.vhd|0*12408*0x10c1bb029d8c62ef0c34e9ca55414649f9e4bdb3|0*12726*0x23b75c12e3e89f2ef000564498faa8c2
-M/structural=21|0|ve8|1761096647757|../src/fulladder.vhd|0*13011*0x5b34b5a5a05c87098679ae0335b85e216e0e6bc2|0*13410*0x20116f55b147878295aeff36dce7fc50
+M/structural=21|0|ve8|1761149803408|../src/fulladder.vhd|0*17365*0x0cc7cbd3ff1e41d76d7e9a744788164673efc309|0*17771*0x20116f55b147878295aeff36dce7fc50
 R=../src/fulladder.vhd|6
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|c12a13e6fa1dde32095fc858f2c5d0a25fe0f6cc11f37d48b53e35433dff82a0c3b32c640961bfa007bf5268dcc94514
-Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb0e6674e569edb667798c059f2da0ec79
+Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb83201ffc0699dab83012bb53e50c8b7e
 
 [fulladder_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/fulladder_TB.vhd|9|1*12489
-BinI32/tb_architecture=3*1066
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/fulladder_TB.vhd|9|1*18782
+BinI32/tb_architecture=3*1535
 I=0*7835
-I/tb_architecture=I/TB_ARCHITECTURE 0*11792
+I/tb_architecture=I/TB_ARCHITECTURE 0*16942
 M=11|0|ve8|1760892737935|../src/TestBench/fulladder_TB.vhd|0*7545*0xac4663c56f1cf3a3eae9f40b883958eb4a155aa0|0*7736*0x23b75c12e3e89f2ef000564498faa8c2
-M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve8|1760892807106|../src/TestBench/fulladder_TB.vhd|0*11105*0x57a165f149bd0dc2aa86b778d7534e130be6d0b1|0*11674*0x20116f55b147878295aeff36dce7fc50
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve8|1761148058360|../src/TestBench/fulladder_TB.vhd|0*15986*0xe04ddd97f0ba28ad965a06cc74b648df6bd1f8e3|0*16824*0x20116f55b147878295aeff36dce7fc50
 R=../src/TestBench/fulladder_TB.vhd|6
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|c660eac30e6f44ea5b8681aff54a8719d00f156c1ff9a7a4d01de27f02299515b82820069cae4b1dd0e48d5bcc422591
-Version/tb_architecture=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea7f264df52d70017402ed3d41333be0ce
+Version/tb_architecture=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beacba74a8288f51046836a7101a04d298f
 
 [halfadder]
 I=0*3390
@@ -50,11 +50,11 @@ Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2
 
 [testbench_for_fulladder]
 Configures=fulladder_tb.TB_ARCHITECTURE
-E=1*13689
-I=0*12048
-M=2|0|ve8|1760892807123|../src/TestBench/fulladder_TB.vhd|0*10510*0x0104b8987b8fec4711796af5a8187360a46118b8|0*10812*0x20116f55b147878295aeff36dce7fc50
-R=../src/TestBench/fulladder_TB.vhd|54
-Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e53a3cccc54b9dc4c0e771e3110c7e18c326527262ddaa47cb266f3a3c4d9b973a63c4de323dbe0a8d2c73ac208b34e6e5
+E=1*19982
+I=0*17197
+M=2|0|ve8|1761148058379|../src/TestBench/fulladder_TB.vhd|0*15391*0x176dbcc73702ee6104fd1d74fe847c70e0f6a9a6|0*15693*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/fulladder_TB.vhd|81
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e53a3cccc54b9dc4c0e771e3110c7e18c326527262ddaa47cb266f3a3c4d9b973aa71900b143cd07cd67006db738c58acc
 
 [xorgate]
 BinI32/behavioral=3*533

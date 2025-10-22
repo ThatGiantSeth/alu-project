@@ -10,5 +10,5 @@ end and3gate;
 
 architecture behavioral of and3gate is
 begin
-	r <= a and b and c;
+	r <= a and b and c after 10ns;
 end behavioral;

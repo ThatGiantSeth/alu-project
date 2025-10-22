@@ -11,5 +11,5 @@ end xorgate;
 
 architecture behavioral of xorgate is
 begin
-	r <= a xor b;
+	r <= a xor b after 10ns;
 end behavioral;

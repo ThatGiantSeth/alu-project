@@ -1,7 +1,55 @@
-# Design: Design alu already active.
-# DESIGN: Default Design Language: VHDL
-# DESIGN: Default BDE Language: VHDL
-# DESIGN: C-Synthesis: Not Defined
-# DESIGN: HDL Synthesis: Not Defined
-# DESIGN: Physical Synthesis: Not Defined
-# DESIGN: Implementation: Not Defined
+# Library Manager: Library "adder16" attached.
+# Library Manager: Library "fulladder" attached.
+# Library Manager: Library "gatelib" attached.
+# Library Manager: Library "halfadder" attached.
+# Library Manager: Library "multiplexer16" attached.
+# Library Manager: Library "multiplier16" attached.
+# Library Manager: Library "subtractor16" attached.
+open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\subtractor_16\subtractor16\src\subtractor16.vhd}
+open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\adder_16\adder16\src\adder16.vhd}
+open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplier_16\multiplier16\src\multiplier16.vhd}
+open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16\src\multiplexer16.vhd}
+acom -reorder -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "alu"
+# Top-level unit(s) detected:
+# Entity => alu
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16\src\multiplexer16.vhd}
+open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\adder_16\adder16\src\adder16.vhd}
+open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\GateLib\GateLib\src\notgate.vhd}
+acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "alu"
+# Error: COMP96_0122: src/alu.vhd : (68, 2): Symbol "create_adder" has already been declared in this scope.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "alu"
+# Error: COMP96_0100: src/alu.vhd : (69, 44): Actual parameter type in port map does not match the type of the formal port 'A'.
+# Error: COMP96_0100: src/alu.vhd : (69, 52): Actual parameter type in port map does not match the type of the formal port 'B'.
+# Error: COMP96_0100: src/alu.vhd : (69, 60): Actual parameter type in port map does not match the type of the formal port 'Product'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "alu"
+# Error: COMP96_0100: src/alu.vhd : (69, 44): Actual parameter type in port map does not match the type of the formal port 'A'.
+# Error: COMP96_0100: src/alu.vhd : (69, 52): Actual parameter type in port map does not match the type of the formal port 'B'.
+# Error: COMP96_0100: src/alu.vhd : (69, 60): Actual parameter type in port map does not match the type of the formal port 'Product'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]

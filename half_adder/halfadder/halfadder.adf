@@ -34,7 +34,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=halfadder_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -43,11 +43,19 @@ TestBench=1
 
 [Files]
 /halfadder.vhd=-1
+/halfadderwave.asdb=-1
+/halfadderwave.awc=-1
+/halfadderwave2.asdb=-1
+/halfadderwave2.awc=-1
 TestBench/halfadder_TB.vhd=-1
 TestBench/halfadder_TB_runtest.do=-1
 
 [Files.Data]
 .\src\halfadder.vhd=VHDL Source Code
+.\src\halfadderwave.asdb=Accelerated Waveform File
+.\src\halfadderwave.awc=Accelerated Waveform Configuration
+.\src\halfadderwave2.asdb=Accelerated Waveform File
+.\src\halfadderwave2.awc=Accelerated Waveform Configuration
 .\src\TestBench\halfadder_TB.vhd=VHDL Test Bench
 .\src\TestBench\halfadder_TB_runtest.do=Macro
 
