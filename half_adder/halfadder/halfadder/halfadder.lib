@@ -1,13 +1,13 @@
-timestamp=1761146558440
+timestamp=1761234667536
 
 [~A]
-ModifyID=40
+ModifyID=41
 Version=74
 
 [~MFT]
-0=10|0halfadder.mgf|31123|25790
-1=4|1halfadder.mgf|42278|40009
-3=2|3halfadder.mgf|1697|1341
+0=8|0halfadder.mgf|31663|26552
+1=2|1halfadder.mgf|42707|41186
+3=0|3halfadder.mgf|1697|1341
 
 [andgate]
 BinI32/behavioral=3*1519
@@ -20,14 +20,14 @@ Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e5
 
 [halfadder]
 A/adder=A/Adder *21|../src/halfadder.vhd|13|
-A/structural=21|../src/halfadder.vhd|16|1*27841
+A/structural=21|../src/halfadder.vhd|16|1*42707
 I=0*17275
-I/structural=0*18714
+I/structural=0*31663
 M=11|0|ve8|1761095933320|../src/halfadder.vhd|0*16877*0x3d13cee3098a6971caa68e3c92772eeb9b338774|0*17192*0x23b75c12e3e89f2ef000564498faa8c2
-M/structural=21|0|ve8|1761144981158|../src/halfadder.vhd|0*18234*0x86f93471099d99a3d2708c45f6259fbe111f2ee8|0*18617*0x20116f55b147878295aeff36dce7fc50
+M/structural=21|0|ve8|1761234667526|../src/halfadder.vhd|0*31291*0x3584a4a9ab93c262ee30dde1323b4873ecf5bf23|0*31566*0x20116f55b147878295aeff36dce7fc50
 R=../src/halfadder.vhd|7
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|df6222d8a183af79470a1a0a11a371eb1093b6854768ed9664634ca9f9371c7bc0501be7357bc262751f3b1b589d98df
-Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb806425c3d433b81b8152386ceb31b8fd
+Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb9777d24a6816c444c1e85873b9470625
 
 [halfadder_tb]
 A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/halfadder_TB.vhd|9|1*41186

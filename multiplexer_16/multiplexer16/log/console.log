@@ -1,95 +1,65 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-# Library Manager: Library "gatelib" attached.
 acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer1.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer1.vhd
 # Compile Entity "multiplexer1"
 # Compile Architecture "structural" of Entity "multiplexer1"
-# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
-acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer1.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer1.vhd
-# Compile Entity "multiplexer1"
-# Compile Architecture "structural" of Entity "multiplexer1"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
 acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer16.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer16.vhd
 # Compile Entity "multiplexer16"
 # Compile Architecture "Structural" of Entity "multiplexer16"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/TestBench/multiplexer16_TB.vhd
+# Error: COMP96_0078: multiplexer16.vhd : (17, 17): Unknown identifier "multiplexer1".
+# Error: COMP96_0133: multiplexer16.vhd : (17, 17): Cannot find object declaration.
+# Error: COMP96_0056: multiplexer16.vhd : (17, 17): Cannot find referenced entity declaration "multiplexer1".
+# Error: COMP96_0055: multiplexer16.vhd : (17, 17): Cannot find context item "multiplexer1.multiplexer1".
+# Compile failure 4 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer16.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/TestBench/multiplexer16_TB.vhd
-# Compile Entity "multiplexer16_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplexer16_tb"
-# Compile Configuration "TESTBENCH_FOR_multiplexer16"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
-asim -O5 +access +r +m+multiplexer16_tb multiplexer16_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6227 kB (elbread=258 elab2=5828 kernel=140 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16\src\wave.asdb
-#  9:46 PM, Tuesday, October 21, 2025
-#  Simulation has been initialized
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+multiplexer16_tb multiplexer16_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/TestBench/multiplexer16_TB.vhd
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer16.vhd
+# Compile Entity "multiplexer16"
+# Compile Architecture "Structural" of Entity "multiplexer16"
+# Error: COMP96_0078: multiplexer16.vhd : (17, 17): Unknown identifier "multiplexer1".
+# Error: COMP96_0056: multiplexer16.vhd : (17, 17): Cannot find referenced entity declaration "multiplexer1".
+# Error: COMP96_0055: multiplexer16.vhd : (17, 17): Cannot find context item "multiplexer1".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer16.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/TestBench/multiplexer16_TB.vhd
-# Compile Entity "multiplexer16_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplexer16_tb"
-# Compile Configuration "TESTBENCH_FOR_multiplexer16"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6227 kB (elbread=258 elab2=5828 kernel=140 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16\src\wave.asdb
-#  9:46 PM, Tuesday, October 21, 2025
-#  Simulation has been initialized
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer16.vhd
+# Compile Entity "multiplexer16"
+# Compile Architecture "Structural" of Entity "multiplexer16"
+# Error: COMP96_0078: multiplexer16.vhd : (17, 10): Unknown identifier "multiplexer1".
+# Error: COMP96_0134: multiplexer16.vhd : (17, 10): Cannot find component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer16.vhd
+# Compile Entity "multiplexer16"
+# Compile Architecture "Structural" of Entity "multiplexer16"
+# Error: COMP96_0134: multiplexer16.vhd : (17, 10): Cannot find component declaration.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer16.vhd
+# Compile Entity "multiplexer16"
+# Compile Architecture "Structural" of Entity "multiplexer16"
+# Error: COMP96_0270: multiplexer16.vhd : (17, 17): "multiplexer16" is not a library nor a package.
+# Error: COMP96_0055: multiplexer16.vhd : (17, 17): Cannot find context item "multiplexer16.multiplexer1".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer16.vhd
+# Compile Entity "multiplexer16"
+# Compile Architecture "Structural" of Entity "multiplexer16"
+# Error: COMP96_0078: multiplexer16.vhd : (17, 17): Unknown identifier "multiplexer1".
+# Error: COMP96_0056: multiplexer16.vhd : (17, 17): Cannot find referenced entity declaration "multiplexer1".
+# Error: COMP96_0055: multiplexer16.vhd : (17, 17): Cannot find context item "multiplexer1".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/multiplexer16.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer16.vhd
+# Compile Entity "multiplexer16"
+# Compile Architecture "Structural" of Entity "multiplexer16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]

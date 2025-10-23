@@ -1115,7 +1115,7 @@ I 000051 55 1126          1761096479825 structural
 	)
 	(_use(ieee(std_logic_1164))(std(standard)))
 )
-V 000051 55 1126          1761144981156 structural
+I 000051 55 1126          1761144981156 structural
 (_unit VHDL(halfadder 0 7(structural 0 16))
 	(_version ve8)
 	(_time 1761144981157 2025.10.22 10:56:21)
@@ -1689,4 +1689,37 @@ V 000042 55 387 0 testbench_for_halfadder
 		)
 	)
 	(_use(std(standard))(ieee(std_logic_1164)))
+)
+V 000051 55 735           1761234667527 structural
+(_unit VHDL(halfadder 0 7(structural 0 16))
+	(_version ve8)
+	(_time 1761234667528 2025.10.23 11:51:07)
+	(_source(\../src/halfadder.vhd\))
+	(_parameters tan)
+	(_code edbab3beb8baeafbeaeffcb7b8ebe9ebe8eaefebe5)
+	(_ent
+		(_time 1761095933320)
+	)
+	(_inst u1 0 19(_ent gatelib xorgate)
+		(_port
+			((a)(a))
+			((b)(b))
+			((r)(R))
+		)
+	)
+	(_inst u2 0 20(_ent gatelib andgate)
+		(_port
+			((a)(a))
+			((b)(b))
+			((r)(Carry))
+		)
+	)
+	(_object
+		(_port(_int A -1 0 9(_ent(_in))))
+		(_port(_int B -1 0 10(_ent(_in))))
+		(_port(_int R -1 0 11(_ent(_out))))
+		(_port(_int Carry -1 0 12(_ent(_out))))
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
 )

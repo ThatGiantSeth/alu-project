@@ -1,4 +1,4 @@
-Active-HDL 12.0.118.7745 2025-10-22 12:16:43
+Active-HDL 12.0.118.7745 2025-10-23 11:50:22
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(fulladder_tb)
@@ -31,3 +31,9 @@ halfadder                      | None
 ieee                           | Standard IEEE packages library
 std                            | Standard VHDL library
 --------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+fulladder_tb fulladder_tb TB_ARCHITECTURE
+
+
+The performance of simulation is reduced. Version EDU Edition

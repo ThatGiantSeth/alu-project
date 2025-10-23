@@ -1,4 +1,4 @@
-29
+30
 ~E 1 "../src/andgate.vhd" 4 andgate
 ~E 1 "../src/fulladder.vhd" 6 fulladder
 ~A 1 "../src/fulladder.vhd" 15 structural

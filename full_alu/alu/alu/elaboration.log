@@ -1,7 +1,7 @@
-Active-HDL 12.0.118.7745 2025-10-23 10:43:16
+Active-HDL 12.0.118.7745 2025-10-23 11:57:04
 
 Elaboration top modules:
-Architecture                  TB_ARCHITECTURE(alu_tb)
+VHDL Configuration            testbench_for_alu
 
 
 -------------------------------------------------------------------------------------------------------
@@ -21,6 +21,12 @@ notgate       | behavioral      | gatelib       |      | 12.0.118.7745 (Windows)
 multiplexer1  | structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
 and3gate      | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
 or5gate       | structural      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
+-------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------
+VHDL Configuration              | Library       | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------------
+testbench_for_alu               | alu           |      |                         | <unavailable>
 -------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------
@@ -48,7 +54,7 @@ subtractor16                    | None
 -------------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+Simulation Options: asim -O5 +access +r +m+testbench_for_alu testbench_for_alu
 
 
 The performance of simulation is reduced. Version EDU Edition

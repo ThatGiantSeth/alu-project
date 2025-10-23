@@ -1,4 +1,4 @@
-52
+56
 ~E 1 "../src/alu.vhd" 16 alu
 ~A 1 "../src/alu.vhd" 25 structural
 ~E 1 "../src/TestBench/alu_TB.vhd" 7 alu_tb

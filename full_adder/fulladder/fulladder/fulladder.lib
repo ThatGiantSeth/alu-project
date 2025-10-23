@@ -1,12 +1,12 @@
-timestamp=1761149803462
+timestamp=1761234615251
 
 [~A]
-ModifyID=29
+ModifyID=30
 Version=74
 
 [~MFT]
-0=8|0fulladder.mgf|17868|11349
-1=2|1fulladder.mgf|20411|18782
+0=8|0fulladder.mgf|18572|12102
+1=2|1fulladder.mgf|21817|20188
 3=2|3fulladder.mgf|2026|1179
 
 [andgate]
@@ -19,15 +19,15 @@ Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|79ddce9604d0928de
 Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff44723a670cdaf3ec10bc9d7872c89f3eb
 
 [fulladder]
-A/structural=21|../src/fulladder.vhd|15|1*20411
+A/structural=21|../src/fulladder.vhd|15|1*21817
 BinI32/structural=3*2026
 I=0*12809
-I/structural=0*17868
+I/structural=0*18572
 M=11|0|ve8|1761096259342|../src/fulladder.vhd|0*12408*0x10c1bb029d8c62ef0c34e9ca55414649f9e4bdb3|0*12726*0x23b75c12e3e89f2ef000564498faa8c2
-M/structural=21|0|ve8|1761149803408|../src/fulladder.vhd|0*17365*0x0cc7cbd3ff1e41d76d7e9a744788164673efc309|0*17771*0x20116f55b147878295aeff36dce7fc50
+M/structural=21|0|ve8|1761234615210|../src/fulladder.vhd|0*18118*0xfa51ee9c5d83b813cd8810d46f75506269a5a3cd|0*18475*0x20116f55b147878295aeff36dce7fc50
 R=../src/fulladder.vhd|6
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|c12a13e6fa1dde32095fc858f2c5d0a25fe0f6cc11f37d48b53e35433dff82a0c3b32c640961bfa007bf5268dcc94514
-Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb83201ffc0699dab83012bb53e50c8b7e
+Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb85a9890f90b39c1c34bd8e2e26dd6ce4
 
 [fulladder_tb]
 A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/fulladder_TB.vhd|9|1*18782

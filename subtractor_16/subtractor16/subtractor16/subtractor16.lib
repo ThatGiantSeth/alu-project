@@ -1,13 +1,13 @@
-timestamp=1761171062656
+timestamp=1761234969052
 
 [~A]
-ModifyID=31
+ModifyID=32
 Version=74
 
 [~MFT]
-0=4|0subtractor16.mgf|33588|26528
-1=4|1subtractor16.mgf|56440|52743
-3=2|3subtractor16.mgf|3852|2988
+0=8|0subtractor16.mgf|34383|27641
+1=2|1subtractor16.mgf|56903|55064
+3=2|3subtractor16.mgf|4126|3296
 
 [fulladder]
 BinI32/structural=3*1000
@@ -37,15 +37,15 @@ Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|16ab8bfb4440dc909
 Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff46936ba0d85f829814d18b61acbea8e20
 
 [subtractor16]
-A/structural=21|../src/subtractor16.vhd|18|1*47226
-BinI32/structural=3*3544
+A/structural=21|../src/subtractor16.vhd|18|1*56903
+BinI32/structural=3*4126
 I=0*29066
-I/structural=0*30093
+I/structural=0*34383
 M=11|0|ve8|1761097064769|../src/subtractor16.vhd|0*28591*0xfcd27ec2e9cf63388b1601ce3d4176b43d44d91f|0*28977*0x23b75c12e3e89f2ef000564498faa8c2
-M/structural=21|0|ve8|1761097064771|../src/subtractor16.vhd|0*29309*0x46ea75df43f5f1dc53ee6fb57b095e6a422fc377|0*29990*0x20116f55b147878295aeff36dce7fc50
+M/structural=21|0|ve8|1761234969008|../src/subtractor16.vhd|0*33760*0xb11492f6842aedc27e7ba2802f8b3996715cae88|0*34280*0x20116f55b147878295aeff36dce7fc50
 R=../src/subtractor16.vhd|9
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|64fa53c22991cd53ac08f44badd72d6ffa8440b0e477715b7d2dbc7249a2cbb02231da1ddda6964505327525846818dd
-Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb5f6ab35497f9dc22af71eeaafc011659
+Version/structural=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb5c9fe3fa19a1bf803435a154e6f57dd3
 
 [subtractor16_tb]
 A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/subtractor16_TB.vhd|10|1*55064

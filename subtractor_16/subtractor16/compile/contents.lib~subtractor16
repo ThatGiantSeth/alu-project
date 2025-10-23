@@ -1,4 +1,4 @@
-31
+32
 ~E 1 "../src/fulladder.vhd" 4 fulladder
 ~E 1 "../src/halfadder.vhd" 4 halfadder
 ~E 1 "../src/notgate.vhd" 4 notgate

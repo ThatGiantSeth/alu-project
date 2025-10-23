@@ -29,60 +29,15 @@ signal prod32				: signed(31 downto 0);
 signal coutA, coutS, over				: std_logic; --over is a temp variable (need to figure out overflow)
 signal passA, passB		: signed(15 downto 0);
 
-component adder16 is
-	Port(
-	A	:	in signed(15 downto 0);
-	B	:	in signed(15 downto 0);
-	Cin	:	in std_logic;
-	Sum:	out signed(15 downto 0);
-	Cout:	out std_logic
-	);
-end component;	
-
-component subtractor16 is
-	Port(
-	A	:	in signed(15 downto 0);
-	B	:	in signed(15 downto 0);
-	Diff:	out signed(15 downto 0);
-	Cout:	out std_logic
-	);
-end component;
-
-component multiplier16 is
-	Port(
-	A	:	in signed(15 downto 0);
-	B	:	in signed(15 downto 0);
-	Product:out signed(31 downto 0);
-	Ovf	: out std_logic
-	);
-end component;
-
-component multiplexer16 is
-	Port(
-	S : in std_logic_vector(2 downto 0);
-    in0, in1, in2, in3, in4 : in signed(15 downto 0);
-    R : out signed(15 downto 0)
-	);
-end component;
-
-component notgate is
-  Port ( a : in std_logic;
-         r : out std_logic );
-end component;
-
 begin 	   
-	invertB : for i in 0 to 15 generate
-		bnot : notgate port map (a => B(i), r => Binv(i)); 
-	end generate;  	
-		
-	create_adder: adder16 port map (A => A, B => B, Cin => '0', Sum => sum, Cout => coutA);
-	create_subtractor: subtractor16 port map (A => A, B => B, Diff => diff, Cout => coutS);
-	create_multiplier: multiplier16 port map (A => A, B => B, Product => prod32, Ovf => over);  
+	create_adder: entity adder16.adder16 port map (A => A, B => B, Cin => '0', Sum => sum, Cout => coutA);
+	create_subtractor: entity subtractor16.subtractor16 port map (A => A, B => B, Diff => diff, Cout => coutS);
+	create_multiplier: entity multiplier16.multiplier16 port map (A => A, B => B, Product => prod32, Ovf => over);  
 	prod16 <= prod32(15 downto 0);
 	passA <= A;
 	passB <= B;
 	
-	create_mux: multiplexer16 port map (
+	create_mux: entity multiplexer16.multiplexer16 port map (
 	S => Op, 
 	in0 => sum, 
 	in1 => diff, 

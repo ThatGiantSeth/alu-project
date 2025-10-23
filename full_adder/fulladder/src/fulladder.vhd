@@ -12,18 +12,12 @@ entity fulladder is
 	cout : out std_logic);
 end fulladder;	 
 
-architecture structural	of fulladder is	  
-
-component halfadder is
-	Port(
-	A, B : in std_logic;
-	R, Carry : out std_logic);
-end component;		 
+architecture structural	of fulladder is	  	 
 
 signal sum1, carry1, carry2 : std_logic;
 
 begin
-	u1 : halfadder port map (a,b,sum1,carry1);
-	u2 : halfadder port map (sum1,cin,sum,carry2);
+	u1 : entity halfadder.halfadder port map (a,b,sum1,carry1);
+	u2 : entity halfadder.halfadder port map (sum1,cin,sum,carry2);
 	cout <= carry1 OR carry2 after 10ns;
 end structural;
