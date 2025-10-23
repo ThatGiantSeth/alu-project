@@ -10,1143 +10,139 @@
 # ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
 # ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
 # ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:39 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# 5 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-run @500ns
-# KERNEL: stopped at time: 500 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:40 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-run @350ns
-# KERNEL: stopped at time: 350 ns
-endsim
-# VSIM: Simulation has finished.
-# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:42 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# 5 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-run @400ns
-# KERNEL: stopped at time: 400 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:45 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @350
-# KERNEL: stopped at time: 350 ps
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:46 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @350ns
-# KERNEL: stopped at time: 350 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:46 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @350ns
-# KERNEL: stopped at time: 350 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:47 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @350ns
-# KERNEL: stopped at time: 350 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:48 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @100ns
-# KERNEL: stopped at time: 100 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:50 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @100ns
-# KERNEL: stopped at time: 100 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:51 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @100ns
-# KERNEL: stopped at time: 100 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:51 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @100ns
-# KERNEL: stopped at time: 100 ns
-open -vhdl {C:\Users\Seth\Desktop\aldec-fall2025\alu-project\subtractor_16\subtractor16\src\subtractor16.vhd}
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  7:59 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-run @350ns
-# KERNEL: stopped at time: 350 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  8:00 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# 5 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-run @350ns
-# KERNEL: stopped at time: 350 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  8:01 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @350ns
-# KERNEL: stopped at time: 350 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  8:02 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @100ns
-# KERNEL: stopped at time: 100 ns
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
-# Compile Entity "alu_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
-# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
-# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
-# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
-# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
-#  8:03 PM, Wednesday, October 22, 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
-# 5 object(s) traced.
-run @350ns
-# KERNEL: stopped at time: 350 ns
+# ELBREAD: Elaboration time 0.3 [s].
 # Waveform file 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu-subwave.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu-subwave.asdb'.
-# Adding file C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\alu-subwave.asdb ... Done
-# Adding file C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\alu-subwave.awc ... Done
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
+# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
+# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
+# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
+# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  10:37 AM, Thursday, October 23, 2025
+#  Simulation has been initialized
+# 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0081 alu.vhd (75): Design unit notgate instantiated in alu.alu(structural) not found in searched libraries: subtractor16, alu.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(and3gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'structural(or5gate)' instantiated in the architecture 'structural(multiplexer1)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(andgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(xorgate)' instantiated in the architecture 'structural(halfadder)' has been remapped.
+# ELBREAD: Warning: Library 'halfadder' containing architecture 'structural(halfadder)' instantiated in the architecture 'structural(fulladder)' has been remapped.
+# ELBREAD: Warning: Library 'gatelib' containing architecture 'behavioral(notgate)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
+# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(subtractor16)' has been remapped.
+# ELBREAD: Warning: Library 'fulladder' containing architecture 'structural(fulladder)' instantiated in the architecture 'structural(Adder16)' has been remapped.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__0/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__1/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__2/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__3/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__4/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__5/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__6/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__7/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__8/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__9/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__10/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__11/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__12/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__13/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__14/bnot : notgate not bound.
+# ELBREAD: Warning: ELBREAD_0037 alu.vhd (75): Component /alu_tb/UUT/invertB__15/bnot : notgate not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6258 kB (elbread=261 elab2=5854 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  10:43 AM, Thursday, October 23, 2025
+#  Simulation has been initialized
+# 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.

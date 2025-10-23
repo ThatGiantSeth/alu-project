@@ -9,4 +9,4 @@ mode=none
 order=1
 macro=
 [Expand]
-alu=1
+alu=0
