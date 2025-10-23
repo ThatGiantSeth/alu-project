@@ -1,4 +1,4 @@
-Active-HDL 12.0.118.7745 2025-10-22 18:18:01
+Active-HDL 12.0.118.7745 2025-10-22 20:03:30
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(alu_tb)
@@ -10,14 +10,15 @@ Entity        | Architecture    | Library       | Info | Compiler Version       
 alu_tb        | TB_ARCHITECTURE | alu           |      | 12.0.118.7745 (Windows) | -O3
 alu           | structural      | alu           |      | 12.0.118.7745 (Windows) | -O3
 Adder16       | structural      | adder16       |      | 12.0.118.7745 (Windows) | -O3
+subtractor16  | structural      | subtractor16  |      | 12.0.118.7745 (Windows) | -O3
 multiplier16  | behavioral      | multiplier16  |      | 12.0.118.7745 (Windows) | -O3
 multiplexer16 | Structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
 fulladder     | structural      | fulladder     |      | 12.0.118.7745 (Windows) | -O3
 halfadder     | structural      | halfadder     |      | 12.0.118.7745 (Windows) | -O3
 xorgate       | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
 andgate       | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
-multiplexer1  | structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
 notgate       | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
+multiplexer1  | structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
 and3gate      | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
 or5gate       | structural      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
 -------------------------------------------------------------------------------------------------------
@@ -43,10 +44,5 @@ ieee                            | Standard IEEE packages library
 multiplexer16                   | None
 multiplier16                    | None
 std                             | Standard VHDL library
+subtractor16                    | None
 -------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
-
-
-The performance of simulation is reduced. Version EDU Edition

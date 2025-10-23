@@ -15,6 +15,7 @@ use multiplexer16.multiplexer16;
 
 entity alu is
 	Port (
+	Clk		: in std_logic;
 	A, B 	: in signed(15 downto 0);
 	Op		: in std_logic_vector(2 downto 0);
 	Result	: out signed(15 downto 0)
@@ -23,7 +24,7 @@ end alu;
 
 architecture structural of alu is 	
 
-signal sum, diff, prod16, Binv	: signed(15 downto 0);	
+signal sum, diff, prod16, Binv, res	: signed(15 downto 0);	
 signal prod32				: signed(31 downto 0);
 signal coutA, coutS, over				: std_logic; --over is a temp variable (need to figure out overflow)
 signal passA, passB		: signed(15 downto 0);
@@ -69,13 +70,13 @@ component notgate is
          r : out std_logic );
 end component;
 
-begin 
+begin 	   
 	invertB : for i in 0 to 15 generate
-		bnot : notgate port map (a => B(i), r => Binv(i));
-	end generate;
-	
+		bnot : notgate port map (a => B(i), r => Binv(i)); 
+	end generate;  	
+		
 	create_adder: adder16 port map (A => A, B => B, Cin => '0', Sum => sum, Cout => coutA);
-	create_subtractor: adder16 port map (A => A, B => Binv, Cin => '1', Sum => diff, Cout => coutS);
+	create_subtractor: subtractor16 port map (A => A, B => B, Diff => diff, Cout => coutS);
 	create_multiplier: multiplier16 port map (A => A, B => B, Product => prod32, Ovf => over);  
 	prod16 <= prod32(15 downto 0);
 	passA <= A;
@@ -88,7 +89,14 @@ begin
 	in2 => prod16, 
 	in3 => passA, 
 	in4 => passB, 
-	R => Result
-	);
+	R => res
+	); 
+	process(Clk)
+	begin
+		if rising_edge(Clk) then
+			Result <= res; 
+		end if;
+	end process;
+
 	
 end structural;

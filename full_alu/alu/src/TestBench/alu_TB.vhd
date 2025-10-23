@@ -11,6 +11,7 @@ architecture TB_ARCHITECTURE of alu_tb is
 	-- Component declaration of the tested unit
 	component alu
 	port(
+		Clk : in STD_LOGIC;
 		A : in SIGNED(15 downto 0);
 		B : in SIGNED(15 downto 0);
 		Op : in STD_LOGIC_VECTOR(2 downto 0);
@@ -18,6 +19,7 @@ architecture TB_ARCHITECTURE of alu_tb is
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
+	signal Clk : STD_LOGIC;
 	signal A : SIGNED(15 downto 0);
 	signal B : SIGNED(15 downto 0);
 	signal Op : STD_LOGIC_VECTOR(2 downto 0);
@@ -31,6 +33,7 @@ begin
 	-- Unit Under Test port map
 	UUT : alu
 		port map (
+			Clk => Clk,
 			A => A,
 			B => B,
 			Op => Op,
@@ -38,15 +41,16 @@ begin
 		);
 
 	-- Add your stimulus here ...
-		stim_proc: process
-begin	
+			stim_proc: process
+begin  	
     A <= ("0000000000000111"); 
-    B <= ("0000000000000100"); 
-	Op <= "001";
+    B <= ("0000000000001100"); 
+	Op <= "001"; -- 000 = A + B, 001 = A - B, 010 = A * B, 011 = pass A, 100 = pass B, else = 0
 	
 	
    wait;
 end process;
+
 end TB_ARCHITECTURE;
 
 configuration TESTBENCH_FOR_alu of alu_tb is

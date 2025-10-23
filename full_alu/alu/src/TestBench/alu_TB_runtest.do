@@ -3,6 +3,7 @@ comp -include "$dsn\src\alu.vhd"
 comp -include "$dsn\src\TestBench\alu_TB.vhd" 
 asim +access +r TESTBENCH_FOR_alu 
 wave 
+wave -noreg Clk
 wave -noreg A
 wave -noreg B
 wave -noreg Op
