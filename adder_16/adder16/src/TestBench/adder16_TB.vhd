@@ -40,7 +40,7 @@ begin
 			Cout => Cout
 		);
 
-	-- Add your stimulus here ...  
+	-- Add your stimulus here ...
 		stim_proc: process
 begin	
 	--A <= to_signed(0,16);
@@ -53,7 +53,6 @@ begin
 	
    wait;
 end process;
-
 end TB_ARCHITECTURE;
 
 configuration TESTBENCH_FOR_adder16 of adder16_tb is

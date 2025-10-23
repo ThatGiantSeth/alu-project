@@ -39,8 +39,8 @@ begin
 			cout => cout
 		);
 
-	-- Add your stimulus here ...	
-	process
+	-- Add your stimulus here ...
+process
 	begin 
 		a <= '0';
 		b <= '0';

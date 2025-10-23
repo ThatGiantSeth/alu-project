@@ -1,36 +1,33 @@
-Active-HDL 12.0.118.7745 2025-10-23 11:48:59
+Active-HDL 12.0.118.7745 2025-10-23 14:55:46
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(adder16_tb)
 
 
-------------------------------------------------------------------------------------------------
-Entity     | Architecture    | Library   | Info | Compiler Version        | Compilation Options
-------------------------------------------------------------------------------------------------
-adder16_tb | TB_ARCHITECTURE | adder16   |      | 12.0.118.7745 (Windows) | -O3
-Adder16    | structural      | adder16   |      | 12.0.118.7745 (Windows) | -O3
-fulladder  | structural      | fulladder |      | 12.0.118.7745 (Windows) | -O3
-halfadder  | structural      | halfadder |      | 12.0.118.7745 (Windows) | -O3
-xorgate    | behavioral      | gatelib   |      | 12.0.118.7745 (Windows) | -O3
-andgate    | behavioral      | gatelib   |      | 12.0.118.7745 (Windows) | -O3
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+Entity     | Architecture    | Library | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------
+adder16_tb | TB_ARCHITECTURE | adder16 |      | 12.0.118.7745 (Windows) | -O3
+Adder16    | structural      | adder16 |      | 12.0.118.7745 (Windows) | -O3
+fulladder  | structural      | adder16 |      | 12.0.118.7745 (Windows) | -O3
+halfadder  | structural      | adder16 |      | 12.0.118.7745 (Windows) | -O3
+xorgate    | behavioral      | adder16 |      | 12.0.118.7745 (Windows) | -O3
+andgate    | behavioral      | adder16 |      | 12.0.118.7745 (Windows) | -O3
+----------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------------------
-VHDL Package                 | Library   | Info | Compiler Version        | Compilation Options
-------------------------------------------------------------------------------------------------
-standard                     | std       |      |                         | <unavailable>
-TEXTIO                       | std       |      |                         | <unavailable>
-std_logic_1164               | ieee      |      |                         | <unavailable>
-NUMERIC_STD                  | ieee      |      |                         | <unavailable>
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+VHDL Package                 | Library | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------
+standard                     | std     |      |                         | <unavailable>
+TEXTIO                       | std     |      |                         | <unavailable>
+std_logic_1164               | ieee    |      |                         | <unavailable>
+NUMERIC_STD                  | ieee    |      |                         | <unavailable>
+----------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 Library                      | Comment
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 adder16                      | None
-fulladder                    | None
-gatelib                      | None
-halfadder                    | None
 ieee                         | Standard IEEE packages library
 std                          | Standard VHDL library
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------

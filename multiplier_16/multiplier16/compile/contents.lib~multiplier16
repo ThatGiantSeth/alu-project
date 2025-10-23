@@ -1,4 +1,4 @@
-47
+48
 ~E 1 "../src/fulladder.vhd" 4 fulladder
 ~E 1 "../src/halfadder.vhd" 4 halfadder
 ~E 1 "../src/multiplier16.vhd" 5 multiplier16

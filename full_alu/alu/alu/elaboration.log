@@ -1,60 +1,47 @@
-Active-HDL 12.0.118.7745 2025-10-23 11:57:04
+Active-HDL 12.0.118.7745 2025-10-23 14:57:13
 
 Elaboration top modules:
-VHDL Configuration            testbench_for_alu
+Architecture                  TB_ARCHITECTURE(alu_tb)
 
 
--------------------------------------------------------------------------------------------------------
-Entity        | Architecture    | Library       | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------------------
-alu_tb        | TB_ARCHITECTURE | alu           |      | 12.0.118.7745 (Windows) | -O3
-alu           | structural      | alu           |      | 12.0.118.7745 (Windows) | -O3
-Adder16       | structural      | adder16       |      | 12.0.118.7745 (Windows) | -O3
-subtractor16  | structural      | subtractor16  |      | 12.0.118.7745 (Windows) | -O3
-multiplier16  | behavioral      | multiplier16  |      | 12.0.118.7745 (Windows) | -O3
-multiplexer16 | Structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
-fulladder     | structural      | fulladder     |      | 12.0.118.7745 (Windows) | -O3
-halfadder     | structural      | halfadder     |      | 12.0.118.7745 (Windows) | -O3
-xorgate       | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
-andgate       | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
-notgate       | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
-multiplexer1  | structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
-and3gate      | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
-or5gate       | structural      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
--------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+Entity        | Architecture    | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------
+alu_tb        | TB_ARCHITECTURE | alu     |      | 12.0.118.7745 (Windows) | -O3
+alu           | structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
+Adder16       | structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
+subtractor16  | structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
+multiplier16  | behavioral      | alu     |      | 12.0.118.7745 (Windows) | -O3
+multiplexer16 | Structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
+fulladder     | structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
+halfadder     | structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
+xorgate       | behavioral      | alu     |      | 12.0.118.7745 (Windows) | -O3
+andgate       | behavioral      | alu     |      | 12.0.118.7745 (Windows) | -O3
+notgate       | behavioral      | alu     |      | 12.0.118.7745 (Windows) | -O3
+multiplexer1  | structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
+and3gate      | behavioral      | alu     |      | 12.0.118.7745 (Windows) | -O3
+or5gate       | structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
+-------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------
-VHDL Configuration              | Library       | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------------------
-testbench_for_alu               | alu           |      |                         | <unavailable>
--------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+VHDL Package                    | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------
+standard                        | std     |      |                         | <unavailable>
+TEXTIO                          | std     |      |                         | <unavailable>
+std_logic_1164                  | ieee    |      |                         | <unavailable>
+NUMERIC_STD                     | ieee    |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------
-VHDL Package                    | Library       | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------------------
-standard                        | std           |      |                         | <unavailable>
-TEXTIO                          | std           |      |                         | <unavailable>
-std_logic_1164                  | ieee          |      |                         | <unavailable>
-NUMERIC_STD                     | ieee          |      |                         | <unavailable>
--------------------------------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 Library                         | Comment
--------------------------------------------------------------------------------------------------------
-adder16                         | None
+-------------------------------------------------------------------------------------------------
 alu                             | None
-fulladder                       | None
-gatelib                         | None
-halfadder                       | None
 ieee                            | Standard IEEE packages library
-multiplexer16                   | None
-multiplier16                    | None
 std                             | Standard VHDL library
-subtractor16                    | None
--------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+testbench_for_alu testbench_for_alu
+Simulation Options: asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
 
 
 The performance of simulation is reduced. Version EDU Edition

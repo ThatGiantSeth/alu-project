@@ -1,4 +1,4 @@
-Active-HDL 12.0.118.7745 2025-10-23 11:55:36
+Active-HDL 12.0.118.7745 2025-10-23 14:58:44
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(subtractor16_tb)
@@ -9,11 +9,11 @@ Entity          | Architecture    | Library      | Info | Compiler Version      
 --------------------------------------------------------------------------------------------------------
 subtractor16_tb | TB_ARCHITECTURE | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
 subtractor16    | structural      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
-notgate         | behavioral      | gatelib      |      | 12.0.118.7745 (Windows) | -O3
-fulladder       | structural      | fulladder    |      | 12.0.118.7745 (Windows) | -O3
-halfadder       | structural      | halfadder    |      | 12.0.118.7745 (Windows) | -O3
-xorgate         | behavioral      | gatelib      |      | 12.0.118.7745 (Windows) | -O3
-andgate         | behavioral      | gatelib      |      | 12.0.118.7745 (Windows) | -O3
+notgate         | behavioral      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
+fulladder       | structural      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
+halfadder       | structural      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
+xorgate         | behavioral      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
+andgate         | behavioral      | subtractor16 |      | 12.0.118.7745 (Windows) | -O3
 --------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------------
@@ -28,9 +28,6 @@ NUMERIC_STD                       | ieee         |      |                       
 --------------------------------------------------------------------------------------------------------
 Library                           | Comment
 --------------------------------------------------------------------------------------------------------
-fulladder                         | None
-gatelib                           | None
-halfadder                         | None
 ieee                              | Standard IEEE packages library
 std                               | Standard VHDL library
 subtractor16                      | None

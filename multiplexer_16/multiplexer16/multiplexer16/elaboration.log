@@ -1,4 +1,4 @@
-Active-HDL 12.0.118.7745 2025-10-23 11:51:17
+Active-HDL 12.0.118.7745 2025-10-23 14:58:00
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(multiplexer16_tb)
@@ -10,10 +10,10 @@ Entity           | Architecture    | Library       | Info | Compiler Version    
 multiplexer16_tb | TB_ARCHITECTURE | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
 multiplexer16    | Structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
 multiplexer1     | structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
-notgate          | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
-and3gate         | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
-andgate          | behavioral      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
-or5gate          | structural      | gatelib       |      | 12.0.118.7745 (Windows) | -O3
+notgate          | behavioral      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+and3gate         | behavioral      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+andgate          | behavioral      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
+or5gate          | structural      | multiplexer16 |      | 12.0.118.7745 (Windows) | -O3
 ----------------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------------
@@ -28,7 +28,6 @@ NUMERIC_STD                        | ieee          |      |                     
 ----------------------------------------------------------------------------------------------------------
 Library                            | Comment
 ----------------------------------------------------------------------------------------------------------
-gatelib                            | None
 ieee                               | Standard IEEE packages library
 multiplexer16                      | None
 std                                | Standard VHDL library

@@ -9,14 +9,10 @@ compile=fulladder
 
 [Library]
 fulladder=.\fulladder\fulladder.lib
-gatelib=.\..\..\gatelib\gatelib\gatelib\gatelib.lib
-halfadder=.\..\..\half_adder\halfadder\halfadder\halfadder.lib
 
 [$LibMap$]
 fulladder=.
 Active_lib=
-gatelib=.
-halfadder=.
 
 [Settings]
 FLOW_TYPE=HDL
@@ -35,23 +31,29 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=fulladder_tb|TB_ARCHITECTURE|0    
+HierarchyInformation=fulladder_tb|TB_ARCHITECTURE|0  
 ShowHide=ShowTopLevel
 Selected=
 
 [ORDER]
-Synchronize=1
+Synchronize=0
 
 [Groups]
 TestBench=1
 
 [Files]
 /fulladder.vhd=-1
+/andgate.vhd=-1
+/halfadder.vhd=-1
+/xorgate.vhd=-1
 TestBench/fulladder_TB.vhd=-1
 TestBench/fulladder_TB_runtest.do=-1
 
 [Files.Data]
 .\src\fulladder.vhd=VHDL Source Code
+.\src\andgate.vhd=VHDL Source Code
+.\src\halfadder.vhd=VHDL Source Code
+.\src\xorgate.vhd=VHDL Source Code
 .\src\TestBench\fulladder_TB.vhd=VHDL Test Bench
 .\src\TestBench\fulladder_TB_runtest.do=Macro
 

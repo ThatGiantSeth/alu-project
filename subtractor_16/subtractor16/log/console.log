@@ -1,8 +1,33 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-acom -O3 -e 100 -work subtractor16 -2002  $dsn/src/subtractor16.vhd
+# Library Manager: Remove mapping "halfadder" of library file "C:/Users/Seth/Desktop/aldec-fall2025/alu-project/half_adder/halfadder/halfadder/halfadder.lib".
+# Library Manager: Local library "halfadder" detached.
+# Library Manager: Remove mapping "gatelib" of library file "C:/Users/Seth/Desktop/aldec-fall2025/alu-project/gatelib/gatelib/gatelib/gatelib.lib".
+# Library Manager: Local library "gatelib" detached.
+# Library Manager: Remove mapping "fulladder" of library file "C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_adder/fulladder/fulladder/fulladder.lib".
+# Library Manager: Local library "fulladder" detached.
+acom -O3 -e 100 -work subtractor16 -2002  $dsn/src/notgate.vhd $dsn/src/xorgate.vhd $dsn/src/andgate.vhd $dsn/src/halfadder.vhd $dsn/src/fulladder.vhd $dsn/src/subtractor16.vhd $dsn/src/TestBench/subtractor16_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/notgate.vhd
+# Compile Entity "notgate"
+# Compile Architecture "behavioral" of Entity "notgate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/xorgate.vhd
+# Compile Entity "xorgate"
+# Compile Architecture "behavioral" of Entity "xorgate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/andgate.vhd
+# Compile Entity "andgate"
+# Compile Architecture "behavioral" of Entity "andgate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/halfadder.vhd
+# Compile Entity "halfadder"
+# Compile Architecture "structural" of Entity "halfadder"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/fulladder.vhd
+# Compile Entity "fulladder"
+# Compile Architecture "structural" of Entity "fulladder"
 # File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/subtractor16.vhd
 # Compile Entity "subtractor16"
 # Compile Architecture "structural" of Entity "subtractor16"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/subtractor_16/subtractor16/src/TestBench/subtractor16_TB.vhd
+# Compile Entity "subtractor16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "subtractor16_tb"
+# Compile Configuration "TESTBENCH_FOR_subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]

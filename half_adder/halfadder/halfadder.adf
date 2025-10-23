@@ -10,13 +10,11 @@ compile=halfadder
 [Library]
 halfadder=.\halfadder\halfadder.lib
 gatelib1=.\..\..\gatelib\gatelib\gatelib\gatelib.lib
-gatelib=.\..\..\gatelib\gatelib\gatelib\gatelib.lib
 
 [$LibMap$]
 halfadder=.
 Active_lib=
 gatelib1=.
-gatelib=.
 
 [Settings]
 FLOW_TYPE=HDL
@@ -26,6 +24,7 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
+fileopenfolder=C:\Users\Seth\Desktop\aldec-fall2025\alu-project\GateLib\GateLib\src
 
 [IMPLEMENTATION]
 UCF=
@@ -34,7 +33,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=halfadder_tb|TB_ARCHITECTURE|0  
+HierarchyInformation= 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -47,6 +46,8 @@ TestBench=1
 /halfadderwave.awc=-1
 /halfadderwave2.asdb=-1
 /halfadderwave2.awc=-1
+/andgate.vhd=-1
+/xorgate.vhd=-1
 TestBench/halfadder_TB.vhd=-1
 TestBench/halfadder_TB_runtest.do=-1
 
@@ -56,6 +57,8 @@ TestBench/halfadder_TB_runtest.do=-1
 .\src\halfadderwave.awc=Accelerated Waveform Configuration
 .\src\halfadderwave2.asdb=Accelerated Waveform File
 .\src\halfadderwave2.awc=Accelerated Waveform Configuration
+.\src\andgate.vhd=VHDL Source Code
+.\src\xorgate.vhd=VHDL Source Code
 .\src\TestBench\halfadder_TB.vhd=VHDL Test Bench
 .\src\TestBench\halfadder_TB_runtest.do=Macro
 

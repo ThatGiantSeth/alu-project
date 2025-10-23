@@ -9,16 +9,10 @@ compile=adder16
 
 [Library]
 adder16=.\adder16\adder16.lib
-fulladder=.\..\..\full_adder\fulladder\fulladder\fulladder.lib
-halfadder=.\..\..\half_adder\halfadder\halfadder\halfadder.lib
-gatelib=.\..\..\gatelib\gatelib\gatelib\gatelib.lib
 
 [$LibMap$]
 adder16=.
 Active_lib=
-fulladder=.
-halfadder=.
-gatelib=.
 
 [Settings]
 FLOW_TYPE=HDL
@@ -28,6 +22,7 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
+fileopenfolder=C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_adder\fulladder\src
 
 [IMPLEMENTATION]
 UCF=
@@ -45,11 +40,22 @@ TestBench=1
 
 [Files]
 /adder16.vhd=-1
+/andgate.vhd=-1
+/fulladder.vhd=-1
+/halfadder.vhd=-1
+/xorgate.vhd=-1
 TestBench/adder16_TB.vhd=-1
 TestBench/adder16_TB_runtest.do=-1
 
 [Files.Data]
 .\src\adder16.vhd=VHDL Source Code
+.\src\andgate.vhd=VHDL Source Code
+.\src\fulladder.vhd=VHDL Source Code
+.\src\halfadder.vhd=VHDL Source Code
+.\src\xorgate.vhd=VHDL Source Code
 .\src\TestBench\adder16_TB.vhd=VHDL Test Bench
 .\src\TestBench\adder16_TB_runtest.do=Macro
+
+[ORDER]
+Synchronize=0
 

@@ -6,4 +6,4 @@ MESSAGE "File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplier_16/mu
 MESSAGE "Compile Entity "multiplier16_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "multiplier16_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_multiplier16"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

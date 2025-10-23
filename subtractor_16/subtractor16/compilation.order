@@ -1,2 +1,7 @@
+.\src\notgate.vhd
+.\src\xorgate.vhd
+.\src\andgate.vhd
+.\src\halfadder.vhd
+.\src\fulladder.vhd
 .\src\subtractor16.vhd
 .\src\TestBench\subtractor16_TB.vhd

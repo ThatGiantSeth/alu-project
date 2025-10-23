@@ -1687,7 +1687,7 @@ I 000045 55 418 0 testbench_for_multiplier16
 	)
 	(_use(std(standard))(ieee(NUMERIC_STD))(ieee(std_logic_1164)))
 )
-V 000051 55 1904          1761169553020 behavioral
+I 000051 55 1904          1761169553020 behavioral
 (_unit VHDL(multiplier16 0 5(behavioral 0 14))
 	(_version ve8)
 	(_time 1761169553021 2025.10.22 17:45:53)
@@ -1732,7 +1732,7 @@ V 000051 55 1904          1761169553020 behavioral
 	)
 	(_model . behavioral 2 -1)
 )
-V 000056 55 1477          1761169553067 TB_ARCHITECTURE
+I 000056 55 1477          1761169553067 TB_ARCHITECTURE
 (_unit VHDL(multiplier16_tb 0 7(tb_architecture 0 10))
 	(_version ve8)
 	(_time 1761169553068 2025.10.22 17:45:53)
@@ -1783,13 +1783,124 @@ V 000056 55 1477          1761169553067 TB_ARCHITECTURE
 	)
 	(_model . TB_ARCHITECTURE 1 -1)
 )
-V 000045 55 418 0 testbench_for_multiplier16
+I 000045 55 418 0 testbench_for_multiplier16
 (_configuration VHDL (testbench_for_multiplier16 0 52 (multiplier16_tb))
 	(_version ve8)
 	(_time 1761169553077 2025.10.22 17:45:53)
 	(_source(\../src/TestBench/multiplier16_TB.vhd\))
 	(_parameters tan)
 	(_code b3b5e4e7b5e5e4a4b7b2a1e9e7b5e6b5b0b5bbb6e5)
+	(_arch TB_ARCHITECTURE
+		(_inst UUT
+			(_ent . multiplier16 behavioral
+			)
+		)
+	)
+	(_use(std(standard))(ieee(NUMERIC_STD))(ieee(std_logic_1164)))
+)
+V 000051 55 1904          1761245911155 behavioral
+(_unit VHDL(multiplier16 0 5(behavioral 0 14))
+	(_version ve8)
+	(_time 1761245911156 2025.10.23 14:58:31)
+	(_source(\../src/multiplier16.vhd\))
+	(_parameters tan)
+	(_code 757721757522726272716c2e247326737c73707277)
+	(_ent
+		(_time 1761169468631)
+	)
+	(_object
+		(_type(_int ~SIGNED{15~downto~0}~12 0 7(_array -1((_dto i 15 i 0)))))
+		(_port(_int A 0 0 7(_ent(_in))))
+		(_port(_int B 0 0 8(_ent(_in))))
+		(_type(_int ~SIGNED{31~downto~0}~12 0 9(_array -1((_dto i 31 i 0)))))
+		(_port(_int Product 1 0 9(_ent(_out))))
+		(_port(_int Ovf -1 0 10(_ent(_out))))
+		(_type(_int ~SIGNED{15~downto~0}~13 0 15(_array -1((_dto i 15 i 0)))))
+		(_sig(_int multiplicand 2 0 15(_arch(_uni))))
+		(_sig(_int multiplier 2 0 16(_arch(_uni))))
+		(_type(_int ~SIGNED{31~downto~0}~13 0 17(_array -1((_dto i 31 i 0)))))
+		(_sig(_int result 3 0 17(_arch(_uni))))
+		(_type(_int ~SIGNED{31~downto~0}~132 0 21(_array -1((_dto i 31 i 0)))))
+		(_var(_int temp_result 4 0 21(_prcs 0)))
+		(_type(_int ~SIGNED{31~downto~0}~134 0 22(_array -1((_dto i 31 i 0)))))
+		(_var(_int mcand 5 0 22(_prcs 0)))
+		(_type(_int ~SIGNED{15~downto~0}~136 0 23(_array -1((_dto i 15 i 0)))))
+		(_var(_int mlt 6 0 23(_prcs 0)))
+		(_var(_int sign -1 0 24(_prcs 0)))
+		(_type(_int ~SIGNED{15~downto~0}~138 0 25(_array -1((_dto i 15 i 0)))))
+		(_var(_int sign_extend 7 0 25(_prcs 0)))
+		(_prcs
+			(line__20(_arch 0 0 20(_prcs(_simple)(_trgt(6)(3))(_sens(0)(1))(_mon))))
+			(line__50(_arch 1 0 50(_assignment(_alias((Product)(result)))(_trgt(2))(_sens(6)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+		(_type(_ext ~extieee.NUMERIC_STD.SIGNED(1 SIGNED)))
+		(_type(_ext ~extstd.standard.NATURAL(2 NATURAL)))
+	)
+	(_use(ieee(std_logic_1164))(ieee(NUMERIC_STD))(std(standard)))
+	(_static
+		(33686018 33686018 33686018 33686018 33686018 33686018 33686018 33686018)
+	)
+	(_model . behavioral 2 -1)
+)
+V 000056 55 1477          1761245911233 TB_ARCHITECTURE
+(_unit VHDL(multiplier16_tb 0 7(tb_architecture 0 10))
+	(_version ve8)
+	(_time 1761245911234 2025.10.23 14:58:31)
+	(_source(\../src/TestBench/multiplier16_TB.vhd\))
+	(_parameters tan)
+	(_code c3c19797c594c4d4c4c4da9892c590c5cac5c6c4c1)
+	(_ent
+		(_time 1760903308548)
+	)
+	(_comp
+		(multiplier16
+			(_object
+				(_port(_int A 0 0 14(_ent (_in))))
+				(_port(_int B 0 0 15(_ent (_in))))
+				(_port(_int Product 1 0 16(_ent (_out))))
+				(_port(_int Ovf -1 0 17(_ent (_out))))
+			)
+		)
+	)
+	(_inst UUT 0 32(_comp multiplier16)
+		(_port
+			((A)(A))
+			((B)(B))
+			((Product)(Product))
+			((Ovf)(Ovf))
+		)
+		(_use(_ent . multiplier16)
+		)
+	)
+	(_object
+		(_type(_int ~SIGNED{15~downto~0}~13 0 14(_array -1((_dto i 15 i 0)))))
+		(_type(_int ~SIGNED{31~downto~0}~13 0 16(_array -1((_dto i 31 i 0)))))
+		(_type(_int ~SIGNED{15~downto~0}~132 0 21(_array -1((_dto i 15 i 0)))))
+		(_sig(_int A 2 0 21(_arch(_uni))))
+		(_sig(_int B 2 0 22(_arch(_uni))))
+		(_type(_int ~SIGNED{31~downto~0}~134 0 24(_array -1((_dto i 31 i 0)))))
+		(_sig(_int Product 3 0 24(_arch(_uni))))
+		(_sig(_int Ovf -1 0 25(_arch(_uni))))
+		(_prcs
+			(stim_proc(_arch 0 0 41(_prcs(_wait_for)(_trgt(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard))(ieee(NUMERIC_STD)))
+	(_static
+		(50529027 50529027 33751811 50528771)
+		(33686018 33686018 33686018 33686019)
+	)
+	(_model . TB_ARCHITECTURE 1 -1)
+)
+V 000045 55 418 0 testbench_for_multiplier16
+(_configuration VHDL (testbench_for_multiplier16 0 52 (multiplier16_tb))
+	(_version ve8)
+	(_time 1761245911255 2025.10.23 14:58:31)
+	(_source(\../src/TestBench/multiplier16_TB.vhd\))
+	(_parameters tan)
+	(_code e2e1e6b1e5b4b5f5e6e3f0b8b6e4b7e4e1e4eae7b4)
 	(_arch TB_ARCHITECTURE
 		(_inst UUT
 			(_ent . multiplier16 behavioral
