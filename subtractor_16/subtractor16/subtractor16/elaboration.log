@@ -1,4 +1,4 @@
-Active-HDL 12.0.118.7745 2025-10-23 14:58:44
+Active-HDL 12.0.118.7745 2025-10-24 14:20:02
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(subtractor16_tb)
@@ -32,3 +32,9 @@ ieee                              | Standard IEEE packages library
 std                               | Standard VHDL library
 subtractor16                      | None
 --------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+subtractor16_tb subtractor16_tb TB_ARCHITECTURE
+
+
+The performance of simulation is reduced. Version EDU Edition

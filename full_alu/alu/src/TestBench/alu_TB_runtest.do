@@ -7,6 +7,7 @@ wave -noreg Clk
 wave -noreg A
 wave -noreg B
 wave -noreg Op
+wave -noreg status
 wave -noreg Result
 # The following lines can be used for timing simulation
 # acom <backannotated_vhdl_file_name>

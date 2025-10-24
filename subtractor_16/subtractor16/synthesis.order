@@ -1,7 +1,7 @@
 i<>.\src\subtractor16.vhd
-i<>.\src\TestBench\subtractor16_TB.vhd
 i<>.\src\andgate.vhd
 i<>.\src\fulladder.vhd
 i<>.\src\halfadder.vhd
 i<>.\src\xorgate.vhd
 i<>.\src\notgate.vhd
+i<>.\src\TestBench\subtractor16_TB.vhd

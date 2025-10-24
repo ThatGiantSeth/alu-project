@@ -4,4 +4,4 @@
 .\src\halfadder.vhd
 .\src\fulladder.vhd
 .\src\subtractor16.vhd
-.\src\TestBench\subtractor16_TB.vhd
+.\src\testbench\subtractor16_tb.vhd

@@ -1,7 +1,7 @@
-Active-HDL 12.0.118.7745 2025-10-23 14:57:13
+Active-HDL 12.0.118.7745 2025-10-24 14:50:33
 
 Elaboration top modules:
-Architecture                  TB_ARCHITECTURE(alu_tb)
+VHDL Configuration            testbench_for_alu
 
 
 -------------------------------------------------------------------------------------------------
@@ -24,6 +24,12 @@ or5gate       | structural      | alu     |      | 12.0.118.7745 (Windows) | -O3
 -------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------
+VHDL Configuration              | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------
+testbench_for_alu               | alu     |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
 VHDL Package                    | Library | Info | Compiler Version        | Compilation Options
 -------------------------------------------------------------------------------------------------
 standard                        | std     |      |                         | <unavailable>
@@ -41,7 +47,7 @@ std                             | Standard VHDL library
 -------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+Simulation Options: asim -O5 +access +r +m+testbench_for_alu testbench_for_alu
 
 
 The performance of simulation is reduced. Version EDU Edition

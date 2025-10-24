@@ -8,6 +8,7 @@ wave -noreg B
 wave -noreg Cin
 wave -noreg Sum
 wave -noreg Cout
+wave -noreg Overflow
 # The following lines can be used for timing simulation
 # acom <backannotated_vhdl_file_name>
 # comp -include "$dsn\src\TestBench\adder16_TB_tim_cfg.vhd" 

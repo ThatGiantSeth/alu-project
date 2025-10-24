@@ -14,7 +14,8 @@ architecture TB_ARCHITECTURE of subtractor16_tb is
 		A : in SIGNED(15 downto 0);
 		B : in SIGNED(15 downto 0);
 		Diff : out SIGNED(15 downto 0);
-		Cout : out STD_LOGIC );
+		Cout : out STD_LOGIC;
+		Overflow : out STD_LOGIC );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
@@ -23,6 +24,7 @@ architecture TB_ARCHITECTURE of subtractor16_tb is
 	-- Observed signals - signals mapped to the output ports of tested entity
 	signal Diff : SIGNED(15 downto 0);
 	signal Cout : STD_LOGIC;
+	signal Overflow : STD_LOGIC;
 
 	-- Add your code here ...
 
@@ -34,14 +36,15 @@ begin
 			A => A,
 			B => B,
 			Diff => Diff,
-			Cout => Cout
+			Cout => Cout,
+			Overflow => Overflow
 		);
 
-	-- Add your stimulus here ...	
+	-- Add your stimulus here ...
 		stim_proc: process
 begin
-    A <= "1000000000000111"; 
-    B <= "1000000000000010"; 
+    A <= "0111110100000000"; 
+    B <= "1101101110000000"; 
     wait for 160 ns;
     wait;
 

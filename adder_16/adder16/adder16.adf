@@ -31,7 +31,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=adder16_tb|TB_ARCHITECTURE|0  
+HierarchyInformation=adder16_tb|testbench_for_adder16|1 
 ShowHide=ShowTopLevel
 Selected=
 

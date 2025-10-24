@@ -15,7 +15,8 @@ architecture TB_ARCHITECTURE of adder16_tb is
 		B : in SIGNED(15 downto 0);
 		Cin : in STD_LOGIC;
 		Sum : out SIGNED(15 downto 0);
-		Cout : out STD_LOGIC );
+		Cout : out STD_LOGIC;
+		Overflow : out STD_LOGIC );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
@@ -25,6 +26,7 @@ architecture TB_ARCHITECTURE of adder16_tb is
 	-- Observed signals - signals mapped to the output ports of tested entity
 	signal Sum : SIGNED(15 downto 0);
 	signal Cout : STD_LOGIC;
+	signal Overflow : STD_LOGIC;
 
 	-- Add your code here ...
 
@@ -37,16 +39,17 @@ begin
 			B => B,
 			Cin => Cin,
 			Sum => Sum,
-			Cout => Cout
+			Cout => Cout,
+			Overflow => Overflow
 		);
 
 	-- Add your stimulus here ...
-		stim_proc: process
+			stim_proc: process
 begin	
 	--A <= to_signed(0,16);
 	--B <= to_signed(0,16);
-    A <= ("0000000000010101"); 
-    B <= ("1111111111010100"); 
+    A <= ("0100000000010101"); 
+    B <= ("0111111111010100"); 
     Cin <= '0';
     wait for 10 ns;	 
 	

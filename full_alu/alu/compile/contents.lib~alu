@@ -1,8 +1,8 @@
-58
+81
 ~E 1 "../src/adder16.vhd" 5 Adder16
-~A 1 "../src/adder16.vhd" 15 structural
+~A 1 "../src/adder16.vhd" 16 structural
 ~E 1 "../src/alu.vhd" 5 alu
-~A 1 "../src/alu.vhd" 14 structural
+~A 1 "../src/alu.vhd" 15 structural
 ~E 1 "../src/TestBench/alu_TB.vhd" 7 alu_tb
 ~A 1 "../src/TestBench/alu_TB.vhd" 10 TB_ARCHITECTURE
 ~E 1 "../src/and3gate.vhd" 4 and3gate
@@ -24,7 +24,7 @@
 ~E 1 "../src/or5gate.vhd" 4 or5gate
 ~A 1 "../src/or5gate.vhd" 9 structural
 ~E 1 "../src/subtractor16.vhd" 5 subtractor16
-~A 1 "../src/subtractor16.vhd" 14 structural
-~C 1 "../src/TestBench/alu_TB.vhd" 56 testbench_for_alu
+~A 1 "../src/subtractor16.vhd" 15 structural
+~C 1 "../src/TestBench/alu_TB.vhd" 60 testbench_for_alu
 ~E 1 "../src/xorgate.vhd" 4 xorgate
 ~A 1 "../src/xorgate.vhd" 12 behavioral

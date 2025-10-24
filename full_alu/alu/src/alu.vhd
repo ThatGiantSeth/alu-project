@@ -7,6 +7,7 @@ entity alu is
 	Clk		: in std_logic;
 	A, B 	: in signed(15 downto 0);
 	Op		: in std_logic_vector(2 downto 0);
+	status	: out std_logic_vector(2 downto 0);
 	Result	: out signed(15 downto 0)
 	);
 end alu;
@@ -15,13 +16,13 @@ architecture structural of alu is
 
 signal sum, diff, prod16, Binv, res	: signed(15 downto 0);	
 signal prod32				: signed(31 downto 0);
-signal coutA, coutS, over				: std_logic; --over is a temp variable (need to figure out overflow)
+signal coutA, coutS, Overflow_add, Overflow_sub, Overflow_mult				: std_logic; --over is a temp variable (need to figure out overflow)
 signal passA, passB		: signed(15 downto 0);
 
 begin 	   
-	create_adder: entity work.adder16 port map (A => A, B => B, Cin => '0', Sum => sum, Cout => coutA);
-	create_subtractor: entity work.subtractor16 port map (A => A, B => B, Diff => diff, Cout => coutS);
-	create_multiplier: entity work.multiplier16 port map (A => A, B => B, Product => prod32, Ovf => over);  
+	create_adder: entity work.adder16 port map (A => A, B => B, Cin => '0', Sum => sum, Cout => coutA, Overflow => Overflow_add);
+	create_subtractor: entity work.subtractor16 port map (A => A, B => B, Diff => diff, Cout => coutS, Overflow => Overflow_sub);
+	create_multiplier: entity work.multiplier16 port map (A => A, B => B, Product => prod32, Ovf => Overflow_mult);  
 	prod16 <= prod32(15 downto 0);
 	passA <= A;
 	passB <= B;
@@ -35,10 +36,25 @@ begin
 	in4 => passB, 
 	R => res
 	); 
-	process(Clk)
+	process(Clk) 
 	begin
 		if rising_edge(Clk) then
 			Result <= res; 
+			
+			case Op is
+				when "000" => status(2) <= Overflow_add; 
+				when "001" => status(2) <= Overflow_sub;
+				when "010" => status(2) <= Overflow_mult;
+				when others => status(2) <= '0';
+			end case;
+			
+			if res = "0000000000000000" then
+				status(1) <= '1';
+			else
+				status(1) <= '0';
+			end if;	 
+			
+			status(0) <= res(15);
 		end if;
 	end process;
 

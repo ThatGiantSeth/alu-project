@@ -15,6 +15,7 @@ architecture TB_ARCHITECTURE of alu_tb is
 		A : in SIGNED(15 downto 0);
 		B : in SIGNED(15 downto 0);
 		Op : in STD_LOGIC_VECTOR(2 downto 0);
+		status : out STD_LOGIC_VECTOR(2 downto 0);
 		Result : out SIGNED(15 downto 0) );
 	end component;
 
@@ -24,6 +25,7 @@ architecture TB_ARCHITECTURE of alu_tb is
 	signal B : SIGNED(15 downto 0);
 	signal Op : STD_LOGIC_VECTOR(2 downto 0);
 	-- Observed signals - signals mapped to the output ports of tested entity
+	signal status : STD_LOGIC_VECTOR(2 downto 0);
 	signal Result : SIGNED(15 downto 0);
 
 	-- Add your code here ...
@@ -37,19 +39,21 @@ begin
 			A => A,
 			B => B,
 			Op => Op,
+			status => status,
 			Result => Result
 		);
 
 	-- Add your stimulus here ...
 			stim_proc: process
 begin  	
-    A <= ("0000000000000111"); 
-    B <= ("0000000000001100"); 
-	Op <= "010"; -- 000 = A + B, 001 = A - B, 010 = A * B, 011 = pass A, 100 = pass B, else = 0
+    A <= ("0000000000000000"); 
+    B <= ("0000000000001101"); 
+	Op <= "011"; -- 000 = A + B, 001 = A - B, 010 = A * B, 011 = pass A, 100 = pass B, else = 0
 	
 	
    wait;
 end process;
+
 
 end TB_ARCHITECTURE;
 

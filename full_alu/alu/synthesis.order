@@ -1,5 +1,4 @@
 i<>.\src\alu.vhd
-i<>.\src\TestBench\alu_TB.vhd
 i<>.\src\adder16.vhd
 i<>.\src\andgate.vhd
 i<>.\src\fulladder.vhd
@@ -12,3 +11,4 @@ i<>.\src\multiplexer1.vhd
 i<>.\src\multiplexer16.vhd
 i<>.\src\notgate.vhd
 i<>.\src\or5gate.vhd
+i<>.\src\TestBench\alu_TB.vhd

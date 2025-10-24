@@ -23,6 +23,17 @@ ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
 fileopenfolder=C:\Users\Seth\Desktop\aldec-fall2025\alu-project\multiplexer_16\multiplexer16\src
+FUNC_LIB=alu
+POST_LIB=alu_post_synthesis
+TIM_LIB=alu_timing
+SYNTH_STATUS=none
+IMPL_TOOL=
+SYNTH_TOOL=
+CSYNTH_TOOL=
+PHYSSYNTH_TOOL=
+FAMILY=
+IMPL_STATUS=none
+PHYSSYNTH_STATUS=none
 
 [IMPLEMENTATION]
 UCF=
@@ -31,7 +42,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=alu_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=alu_tb|testbench_for_alu|1 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -78,3 +89,4 @@ TestBench/alu_TB_runtest.do=-1
 
 [ORDER]
 Synchronize=0
+
