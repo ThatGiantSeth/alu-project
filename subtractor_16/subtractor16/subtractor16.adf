@@ -31,7 +31,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=subtractor16_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=subtractor16_tb|TB_ARCHITECTURE|0  
 HierarchyInformation=subtractor16_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=

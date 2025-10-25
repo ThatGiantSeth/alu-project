@@ -40,6 +40,7 @@ begin
 		);
 
 	-- Add your stimulus here ...
+	--each possible test case for the full adder
 process
 	begin 
 		a <= '0';

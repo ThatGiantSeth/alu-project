@@ -3,4 +3,4 @@ MESSAGE "File: C:/Users/aubre/alu-project/adder_16/adder16/src/TestBench/adder16
 MESSAGE "Compile Entity "adder16_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "adder16_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_adder16"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

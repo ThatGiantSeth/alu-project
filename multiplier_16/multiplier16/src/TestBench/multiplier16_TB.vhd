@@ -38,11 +38,22 @@ begin
 		);
 
 	-- Add your stimulus here ...
-		stim_proc: process
-begin	
-    A <= ("1111111111101011"); 
+	stim_proc: process
+	
+	
+begin 
+--multiplying 3 and 8
+	--A <= ("0000000000000011"); 
+   -- B <= ("0000000000001000"); 
+    --wait for 10 ns;
+--multiplying -21 and 8 to test for signed multiplication
+    --A <= ("1111111111101011"); 
+    --B <= ("0000000000001000"); 
+    --wait for 10 ns;
+--testing for an overflow condition
+	A <= ("0111111111111100"); 
     B <= ("0000000000001000"); 
-    wait for 10 ns;	 
+    wait for 10 ns;
 	
 	
    wait;

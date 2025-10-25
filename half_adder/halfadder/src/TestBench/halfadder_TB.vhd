@@ -36,7 +36,8 @@ begin
 			Carry => Carry
 		);
 
-	-- Add your stimulus here ...	   
+	-- Add your stimulus here ...
+	--Each of the possible testcases for the halfadder
 	process
 	begin	  
 		A <= '0';

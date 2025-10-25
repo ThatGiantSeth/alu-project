@@ -41,11 +41,25 @@ begin
 		);
 
 	-- Add your stimulus here ...
-		stim_proc: process
-begin
-    A <= "0111110100000000"; 
-    B <= "1101101110000000"; 
-    wait for 160 ns;
+	stim_proc: process
+begin  
+--subtracting 16 and 8	
+		--A <= "0000000000010000"; 
+    	--B <= "0000000000001000";
+		--wait for 10 ns; 
+--subtracting 8 and 16 to test for signed subtraction	
+		--A <= "0000000000001000"; 
+    	--B <= "0000000000010000";
+		--wait for 10 ns;
+--subtracting -1 and -2
+		--A <= "1111111111111111"; 
+    	--B <= "1111111111111110";
+		--wait for 10 ns;
+--subtracting 32,000 and -10,000 to test for overflow condition
+    	A <= "0111110100000000"; 
+    	B <= "1101101110000000"; 
+    	wait for 10 ns;	 
+		
     wait;
 
 end process;

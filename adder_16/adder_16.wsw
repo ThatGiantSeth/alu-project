@@ -8,3 +8,6 @@ tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\adder16\src/TestBench/adder16_TB.vhd|]
 TemplateId=0
 tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\adder16\src/halfadder.vhd|]
+TemplateId=0
+tab=lu

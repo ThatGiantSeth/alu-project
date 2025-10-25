@@ -46,12 +46,31 @@ begin
 	-- Add your stimulus here ...
 			stim_proc: process
 begin	
-	--A <= to_signed(0,16);
-	--B <= to_signed(0,16);
-    A <= ("0100000000010101"); 
-    B <= ("0111111111010100"); 
-    Cin <= '0';
-    wait for 10 ns;	 
+	--adding 5 and 4 without Carryin
+		--A <= ("0000000000000101"); 
+    	--B <= ("0000000000000100"); 
+    	--Cin <= '0';
+    	--wait for 10 ns;
+	--adding 5 and 4 with Carryin
+		--A <= ("0000000000000101"); 
+    	--B <= ("0000000000000100"); 
+    	--Cin <= '1';
+    	--wait for 10 ns;
+	--adding -1 and 4 without Carryin
+		--A <= ("1111111111111111"); 
+    	--B <= ("0000000000000100"); 
+    	--Cin <= '0';
+    	--wait for 10 ns;
+	--adding -1 and 4 with Carryin
+		--A <= ("1111111111111111"); 
+    	--B <= ("0000000000000100"); 
+    	--Cin <= '1';
+    	--wait for 10 ns;
+	--testing for overflow condition
+    	A <= ("0100000000010101"); 
+   		B <= ("0111111111010100"); 
+    	Cin <= '0';
+    	wait for 10 ns;	 
 	
 	
    wait;

@@ -1,29 +1,5 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# Library Manager: Remove mapping "gatelib" of library file "C:/Users/Seth/Desktop/aldec-fall2025/alu-project/gatelib/gatelib/gatelib/gatelib.lib".
-# Library Manager: Local library "gatelib" detached.
-acom -O3 -e 100 -work multiplexer16 -2002  $dsn/src/and3gate.vhd $dsn/src/andgate.vhd $dsn/src/notgate.vhd $dsn/src/or5gate.vhd $dsn/src/multiplexer1.vhd $dsn/src/multiplexer16.vhd $dsn/src/TestBench/multiplexer16_TB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/and3gate.vhd
-# Compile Entity "and3gate"
-# Compile Architecture "behavioral" of Entity "and3gate"
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/andgate.vhd
-# Compile Entity "andgate"
-# Compile Architecture "behavioral" of Entity "andgate"
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/notgate.vhd
-# Compile Entity "notgate"
-# Compile Architecture "behavioral" of Entity "notgate"
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/or5gate.vhd
-# Compile Entity "or5gate"
-# Compile Architecture "structural" of Entity "or5gate"
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer1.vhd
-# Compile Entity "multiplexer1"
-# Compile Architecture "structural" of Entity "multiplexer1"
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/multiplexer16.vhd
-# Compile Entity "multiplexer16"
-# Compile Architecture "Structural" of Entity "multiplexer16"
-# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/multiplexer_16/multiplexer16/src/TestBench/multiplexer16_TB.vhd
-# Compile Entity "multiplexer16_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "multiplexer16_tb"
-# Compile Configuration "TESTBENCH_FOR_multiplexer16"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Error: Architecture 'TB_ARCHITECTURE' of entity 'multiplexer16_tb' not found in library 'multiplexer16'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Library Manager: Library "multiplexer16" contents cleared.
