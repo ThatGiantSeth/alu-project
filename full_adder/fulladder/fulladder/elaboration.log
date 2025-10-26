@@ -1,7 +1,7 @@
-Active-HDL 12.0.118.7745 2025-10-25 11:30:25
+Active-HDL 12.0.118.7745 2025-10-25 14:27:36
 
 Elaboration top modules:
-VHDL Configuration            testbench_for_fulladder
+Architecture                  TB_ARCHITECTURE(fulladder_tb)
 
 
 --------------------------------------------------------------------------------------------------
@@ -10,14 +10,9 @@ Entity       | Architecture    | Library   | Info | Compiler Version        | Co
 fulladder_tb | TB_ARCHITECTURE | fulladder |      | 12.0.118.7745 (Windows) | -O3
 fulladder    | structural      | fulladder |      | 12.0.118.7745 (Windows) | -O3
 halfadder    | structural      | fulladder |      | 12.0.118.7745 (Windows) | -O3
+orgate       | structural      | fulladder |      | 12.0.118.7745 (Windows) | -O3
 xorgate      | behavioral      | fulladder |      | 12.0.118.7745 (Windows) | -O3
 andgate      | behavioral      | fulladder |      | 12.0.118.7745 (Windows) | -O3
---------------------------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------------------------
-VHDL Configuration             | Library   | Info | Compiler Version        | Compilation Options
---------------------------------------------------------------------------------------------------
-testbench_for_fulladder        | fulladder |      |                         | <unavailable>
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
@@ -35,3 +30,9 @@ fulladder                      | None
 ieee                           | Standard IEEE packages library
 std                            | Standard VHDL library
 --------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+fulladder_tb fulladder_tb TB_ARCHITECTURE
+
+
+The performance of simulation is reduced. Version EDU Edition

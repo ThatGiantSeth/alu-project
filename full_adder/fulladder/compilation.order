@@ -3,3 +3,4 @@
 .\src\halfadder.vhd
 .\src\fulladder.vhd
 .\src\testbench\fulladder_tb.vhd
+.\src\orgate.vhd

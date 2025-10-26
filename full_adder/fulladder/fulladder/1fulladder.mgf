@@ -1,12 +1,12 @@
-V 000051 55 597           1761406225198 behavioral
+V 000051 55 597           1761415689680 behavioral
 (_unit VHDL(xorgate 0 4(behavioral 0 12))
 	(_version ve8)
-	(_time 1761406225199 2025.10.25 11:30:25)
+	(_time 1761415689681 2025.10.25 14:08:09)
 	(_source(\../src/xorgate.vhd\))
 	(_parameters tan)
-	(_code 03060e055655551504501258560506040b05550401)
+	(_code bfbeb0ebbfe9e9a9b8ecaee4eab9bab8b7b9e9b8bd)
 	(_ent
-		(_time 1761406225196)
+		(_time 1761415689678)
 	)
 	(_object
 		(_port(_int a -1 0 6(_ent(_in))))
@@ -20,15 +20,15 @@ V 000051 55 597           1761406225198 behavioral
 	(_use(ieee(std_logic_1164))(std(standard)))
 	(_model . behavioral 1 -1)
 )
-V 000051 55 597           1761406225316 behavioral
+V 000051 55 597           1761415689718 behavioral
 (_unit VHDL(andgate 0 4(behavioral 0 12))
 	(_version ve8)
-	(_time 1761406225317 2025.10.25 11:30:25)
+	(_time 1761415689719 2025.10.25 14:08:09)
 	(_source(\../src/andgate.vhd\))
 	(_parameters tan)
-	(_code 8084848ed5d7d09687d391dbd58685868186d58684)
+	(_code deded88cde898ec8d98dcf858bd8dbd8dfd88bd8da)
 	(_ent
-		(_time 1761406225299)
+		(_time 1761415689716)
 	)
 	(_object
 		(_port(_int a -1 0 6(_ent(_in))))
@@ -42,15 +42,15 @@ V 000051 55 597           1761406225316 behavioral
 	(_use(ieee(std_logic_1164))(std(standard)))
 	(_model . behavioral 1 -1)
 )
-V 000051 55 721           1761406225431 structural
+V 000051 55 721           1761415689756 structural
 (_unit VHDL(halfadder 0 5(structural 0 15))
 	(_version ve8)
-	(_time 1761406225432 2025.10.25 11:30:25)
+	(_time 1761415689757 2025.10.25 14:08:09)
 	(_source(\../src/halfadder.vhd\))
 	(_parameters tan)
-	(_code eeeae3bdbab9e9f8e9ecffb4bbe8eae8ebe9ece8e6)
+	(_code 0d0d0d0b585a0a1b0a0f1c57580b090b080a0f0b05)
 	(_ent
-		(_time 1761406225412)
+		(_time 1761415689754)
 	)
 	(_inst u1 0 19(_ent . xorgate)
 		(_port
@@ -75,15 +75,15 @@ V 000051 55 721           1761406225431 structural
 	)
 	(_use(ieee(std_logic_1164))(std(standard)))
 )
-V 000051 55 1056          1761406225491 structural
+I 000051 55 1056          1761415689764 structural
 (_unit VHDL(fulladder 0 6(structural 0 15))
 	(_version ve8)
-	(_time 1761406225492 2025.10.25 11:30:25)
+	(_time 1761415689765 2025.10.25 14:08:09)
 	(_source(\../src/fulladder.vhd\))
 	(_parameters tan)
-	(_code 2c282c297a7b2b3a7e2d3d76792a282a292b2e2a2a)
+	(_code 0d0d030a5c5a0a1b5f0c1c57580b090b080a0f0b0b)
 	(_ent
-		(_time 1761406225474)
+		(_time 1761415689762)
 	)
 	(_inst u1 0 21(_ent . halfadder)
 		(_port
@@ -118,15 +118,15 @@ V 000051 55 1056          1761406225491 structural
 	(_use(ieee(std_logic_1164))(std(standard)))
 	(_model . structural 1 -1)
 )
-V 000056 55 1144          1761406225617 TB_ARCHITECTURE
+V 000056 55 1144          1761415689807 TB_ARCHITECTURE
 (_unit VHDL(fulladder_tb 0 6(tb_architecture 0 9))
 	(_version ve8)
-	(_time 1761406225618 2025.10.25 11:30:25)
+	(_time 1761415689808 2025.10.25 14:08:09)
 	(_source(\../src/testbench/fulladder_tb.vhd\))
 	(_parameters tan)
-	(_code a9ada9ffa5feaebffef9b8f3fcafadafacaeabacff)
+	(_code 3c3c32386a6b3b2a6b6c2d66693a383a393b3e396a)
 	(_ent
-		(_time 1761406225598)
+		(_time 1761415689805)
 	)
 	(_comp
 		(fulladder
@@ -167,10 +167,10 @@ V 000056 55 1144          1761406225617 TB_ARCHITECTURE
 V 000042 55 387 0 testbench_for_fulladder
 (_configuration VHDL (testbench_for_fulladder 0 82 (fulladder_tb))
 	(_version ve8)
-	(_time 1761406225643 2025.10.25 11:30:25)
+	(_time 1761415689813 2025.10.25 14:08:09)
 	(_source(\../src/testbench/fulladder_tb.vhd\))
 	(_parameters tan)
-	(_code c8cdca9dc59e9fdfccc9da929cce9dcecbcec0cd9e)
+	(_code 4b4a47491c1d1c5c4f4a59111f4d1e4d484d434e1d)
 	(_arch TB_ARCHITECTURE
 		(_inst UUT
 			(_ent . fulladder structural
@@ -178,4 +178,72 @@ V 000042 55 387 0 testbench_for_fulladder
 		)
 	)
 	(_use(std(standard))(ieee(std_logic_1164)))
+)
+V 000051 55 594           1761416835990 structural
+(_unit VHDL(orgate 0 4(structural 0 9))
+	(_version ve8)
+	(_time 1761416835991 2025.10.25 14:27:15)
+	(_source(\../src/orgate.vhd\))
+	(_parameters tan)
+	(_code 87d4d48882d0d49186d293ddd381d1808581808186)
+	(_ent
+		(_time 1761416830371)
+	)
+	(_object
+		(_port(_int a -1 0 5(_ent(_in))))
+		(_port(_int b -1 0 5(_ent(_in))))
+		(_port(_int r -1 0 6(_ent(_out))))
+		(_prcs
+			(line__11(_arch 0 0 11(_assignment(_trgt(2))(_sens(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . structural 1 -1)
+)
+V 000051 55 1056          1761416841449 structural
+(_unit VHDL(fulladder 0 6(structural 0 15))
+	(_version ve8)
+	(_time 1761416841450 2025.10.25 14:27:21)
+	(_source(\../src/fulladder.vhd\))
+	(_parameters tan)
+	(_code d4848387d583d3c286d5c58e81d2d0d2d1d3d6d2d2)
+	(_ent
+		(_time 1761415689761)
+	)
+	(_inst u1 0 21(_ent . halfadder)
+		(_port
+			((A)(a))
+			((B)(b))
+			((R)(sum1))
+			((Carry)(carry1))
+		)
+	)
+	(_inst u2 0 22(_ent . halfadder)
+		(_port
+			((A)(sum1))
+			((B)(cin))
+			((R)(sum))
+			((Carry)(carry2))
+		)
+	)
+	(_inst carryout 0 23(_ent . orgate)
+		(_port
+			((a)(carry1))
+			((b)(carry2))
+			((r)(cout))
+		)
+	)
+	(_object
+		(_port(_int a -1 0 8(_ent(_in))))
+		(_port(_int b -1 0 9(_ent(_in))))
+		(_port(_int cin -1 0 10(_ent(_in))))
+		(_port(_int sum -1 0 11(_ent(_out))))
+		(_port(_int cout -1 0 12(_ent(_out))))
+		(_sig(_int sum1 -1 0 17(_arch(_uni))))
+		(_sig(_int carry1 -1 0 17(_arch(_uni))))
+		(_sig(_int carry2 -1 0 17(_arch(_uni))))
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
 )

@@ -1,48 +1,904 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.1 [s].
-acom -O3 -e 100 -work alu -2002  $dsn/src/or5gate.vhd $dsn/src/notgate.vhd $dsn/src/and3gate.vhd $dsn/src/andgate.vhd $dsn/src/xorgate.vhd $dsn/src/halfadder.vhd $dsn/src/fulladder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/multiplier16.vhd $dsn/src/multiplexer1.vhd $dsn/src/multiplexer16.vhd $dsn/src/alu.vhd $dsn/src/testbench/alu_tb.vhd
+# Library Manager: Library "alu" contents cleared.
+acom -reorder -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/or5gate.vhd
-# Compile Entity "or5gate"
-# Compile Architecture "structural" of Entity "or5gate"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/notgate.vhd
-# Compile Entity "notgate"
-# Compile Architecture "behavioral" of Entity "notgate"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/and3gate.vhd
-# Compile Entity "and3gate"
-# Compile Architecture "behavioral" of Entity "and3gate"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/andgate.vhd
-# Compile Entity "andgate"
-# Compile Architecture "behavioral" of Entity "andgate"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/xorgate.vhd
-# Compile Entity "xorgate"
-# Compile Architecture "behavioral" of Entity "xorgate"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/halfadder.vhd
-# Compile Entity "halfadder"
-# Compile Architecture "structural" of Entity "halfadder"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/fulladder.vhd
-# Compile Entity "fulladder"
-# Compile Architecture "structural" of Entity "fulladder"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/adder16.vhd
-# Compile Entity "Adder16"
-# Compile Architecture "structural" of Entity "Adder16"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/subtractor16.vhd
-# Compile Entity "subtractor16"
-# Compile Architecture "structural" of Entity "subtractor16"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/multiplier16.vhd
-# Compile Entity "multiplier16"
-# Compile Architecture "behavioral" of Entity "multiplier16"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/multiplexer1.vhd
-# Compile Entity "multiplexer1"
-# Compile Architecture "structural" of Entity "multiplexer1"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/multiplexer16.vhd
-# Compile Entity "multiplexer16"
-# Compile Architecture "Structural" of Entity "multiplexer16"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/alu.vhd
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
 # Compile Entity "alu"
 # Compile Architecture "structural" of Entity "alu"
-# File: C:/Users/aubre/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => alu
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
+# Compile Architecture "structural" of Entity "alu"
+# Error: COMP96_0617: alu.vhd : (25, 11): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'STD_ULOGIC'.
+# Error: COMP96_0617: alu.vhd : (26, 11): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'STD_ULOGIC'.
+# Error: COMP96_0617: alu.vhd : (27, 11): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'STD_ULOGIC'.
+# Error: COMP96_0078: alu.vhd : (29, 28): Unknown identifier "adder16".
+# Error: COMP96_0055: alu.vhd : (29, 23): Cannot find context item "work.adder16".
+# Error: COMP96_0078: alu.vhd : (30, 33): Unknown identifier "subtractor16".
+# Error: COMP96_0055: alu.vhd : (30, 28): Cannot find context item "work.subtractor16".
+# Error: COMP96_0078: alu.vhd : (31, 33): Unknown identifier "multiplier16".
+# Error: COMP96_0055: alu.vhd : (31, 28): Cannot find context item "work.multiplier16".
+# Error: COMP96_0078: alu.vhd : (41, 26): Unknown identifier "multiplexer16".
+# Error: COMP96_0055: alu.vhd : (41, 21): Cannot find context item "work.multiplexer16".
+# Compile failure 11 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work alu -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "alu"
+# Error: COMP96_0078: alu.vhd : (29, 28): Unknown identifier "adder16".
+# Error: COMP96_0055: alu.vhd : (29, 23): Cannot find context item "work.adder16".
+# Error: COMP96_0078: alu.vhd : (30, 33): Unknown identifier "subtractor16".
+# Error: COMP96_0055: alu.vhd : (30, 28): Cannot find context item "work.subtractor16".
+# Error: COMP96_0078: alu.vhd : (31, 33): Unknown identifier "multiplier16".
+# Error: COMP96_0055: alu.vhd : (31, 28): Cannot find context item "work.multiplier16".
+# Error: COMP96_0078: alu.vhd : (41, 26): Unknown identifier "multiplexer16".
+# Error: COMP96_0055: alu.vhd : (41, 21): Cannot find context item "work.multiplexer16".
+# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work alu -2002  $dsn/src/or5gate.vhd $dsn/src/notgate.vhd $dsn/src/and3gate.vhd $dsn/src/andgate.vhd $dsn/src/xorgate.vhd $dsn/src/halfadder.vhd $dsn/src/fulladder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/multiplier16.vhd $dsn/src/multiplexer1.vhd $dsn/src/multiplexer16.vhd $dsn/src/alu.vhd $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/or5gate.vhd
+# Compile Entity "or5gate"
+# Compile Architecture "structural" of Entity "or5gate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/notgate.vhd
+# Compile Entity "notgate"
+# Compile Architecture "behavioral" of Entity "notgate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/and3gate.vhd
+# Compile Entity "and3gate"
+# Compile Architecture "behavioral" of Entity "and3gate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/andgate.vhd
+# Compile Entity "andgate"
+# Compile Architecture "behavioral" of Entity "andgate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/xorgate.vhd
+# Compile Entity "xorgate"
+# Compile Architecture "behavioral" of Entity "xorgate"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/halfadder.vhd
+# Compile Entity "halfadder"
+# Compile Architecture "structural" of Entity "halfadder"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/fulladder.vhd
+# Compile Entity "fulladder"
+# Compile Architecture "structural" of Entity "fulladder"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/adder16.vhd
+# Compile Entity "Adder16"
+# Compile Architecture "structural" of Entity "Adder16"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "behavioral" of Entity "multiplier16"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/multiplexer1.vhd
+# Compile Entity "multiplexer1"
+# Compile Architecture "structural" of Entity "multiplexer1"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/multiplexer16.vhd
+# Compile Entity "multiplexer16"
+# Compile Architecture "Structural" of Entity "multiplexer16"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "structural" of Entity "alu"
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Warning: ELAB1_0026: testbench/alu_tb.vhd : (36, 0): There is no default binding for component "alu". (Port "Op" is not on the entity).
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Error: ELAB1_0011: testbench/alu_tb.vhd : (62, 0): Port "S2" is on entity "alu" but not on the component declaration.
+# Error: ELAB1_0011: testbench/alu_tb.vhd : (62, 0): Port "S1" is on entity "alu" but not on the component declaration.
+# Error: ELAB1_0011: testbench/alu_tb.vhd : (62, 0): Port "S0" is on entity "alu" but not on the component declaration.
+# Error: ELAB1_0030: testbench/alu_tb.vhd : (62, 0): Port "Op" is on component "alu" but not on the entity "alu".
+# Error: COMP96_0203: testbench/alu_tb.vhd : (63, 4): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: testbench/alu_tb.vhd : (63, 0): Port "S2" is on entity "alu" but not on the component declaration.
+# Error: ELAB1_0011: testbench/alu_tb.vhd : (63, 0): Port "S1" is on entity "alu" but not on the component declaration.
+# Error: ELAB1_0011: testbench/alu_tb.vhd : (63, 0): Port "S0" is on entity "alu" but not on the component declaration.
+# Error: ELAB1_0030: testbench/alu_tb.vhd : (63, 0): Port "Op" is on component "alu" but not on the entity "alu".
+# Compile failure 9 Errors 1 Warnings  Analysis time :  1.0 [s]
+acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
 # Compile Entity "alu_tb"
 # Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
 # Compile Configuration "TESTBENCH_FOR_alu"
-# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:36 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run @300ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run @700ns
+# KERNEL: stopped at time: 700 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:37 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+run @300ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 300 ns
+# 2 object(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:38 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 7 object(s) traced.
+# 1 object(s) traced.
+run @300ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:40 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @300ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 90 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 130 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 170 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 190 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 210 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 250 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:40 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @500ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 90 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 130 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 170 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 190 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 210 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 250 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:41 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @500ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 90 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 130 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 170 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 190 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 210 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 250 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 270 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 290 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 310 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:45 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @500ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 90 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 130 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 170 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 190 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 210 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:47 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @500ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 90 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 130 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 170 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 190 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 210 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 250 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 270 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:49 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @500ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 90 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 130 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 170 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 190 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 210 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 250 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 270 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:50 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @500ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:52 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @320ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 90 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 130 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 170 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 190 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 210 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 320 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:53 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @300ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:54 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @200ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 200 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6261 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:56 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @150ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 150 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:57 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @100ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+alu_tb alu_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu -2002  $dsn/src/testbench/alu_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/testbench/alu_tb.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6260 kB (elbread=261 elab2=5856 kernel=142 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seth\Desktop\aldec-fall2025\alu-project\full_alu\alu\src\wave.asdb
+#  3:58 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/wave.asdb'.
+# 5 object(s) traced.
+run @100ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 0,  Instance: /alu_tb/UUT,  Process: line__52.
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work alu -2002  $dsn/src/TestBench/alu_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seth/Desktop/aldec-fall2025/alu-project/full_alu/alu/src/TestBench/alu_TB.vhd
+# Compile Entity "alu_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+# Library Manager: Library "alu" contents cleared.

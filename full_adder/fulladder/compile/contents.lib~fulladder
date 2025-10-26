@@ -1,4 +1,4 @@
-36
+42
 ~E 1 "../src/andgate.vhd" 4 andgate
 ~A 1 "../src/andgate.vhd" 12 behavioral
 ~E 1 "../src/fulladder.vhd" 6 fulladder
@@ -7,6 +7,8 @@
 ~A 1 "../src/testbench/fulladder_tb.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/halfadder.vhd" 5 halfadder
 ~A 1 "../src/halfadder.vhd" 15 structural
+~E 1 "../src/orgate.vhd" 4 orgate
+~A 1 "../src/orgate.vhd" 9 structural
 ~C 1 "../src/testbench/fulladder_tb.vhd" 82 testbench_for_fulladder
 ~E 1 "../src/xorgate.vhd" 4 xorgate
 ~A 1 "../src/xorgate.vhd" 12 behavioral

@@ -1,1 +1,2 @@
-multiplexer1 ENTITY
+TESTBENCH_FOR_multiplexer16 CONFIGURATION
+multiplexer16 ENTITY

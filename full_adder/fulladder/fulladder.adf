@@ -22,7 +22,7 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
-fileopenfolder=C:\Users\Seth\Desktop\aldec-fall2025\alu-project\half_adder\halfadder\src
+fileopenfolder=C:\Users\Seth\Desktop\aldec-fall2025\alu-project\GateLib\GateLib\src
 
 [IMPLEMENTATION]
 UCF=
@@ -31,7 +31,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=fulladder_tb|testbench_for_fulladder|1   
+HierarchyInformation=fulladder_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -46,6 +46,7 @@ TestBench=1
 /andgate.vhd=-1
 /halfadder.vhd=-1
 /xorgate.vhd=-1
+/orgate.vhd=-1
 TestBench/fulladder_TB.vhd=-1
 TestBench/fulladder_TB_runtest.do=-1
 
@@ -54,6 +55,7 @@ TestBench/fulladder_TB_runtest.do=-1
 .\src\andgate.vhd=VHDL Source Code
 .\src\halfadder.vhd=VHDL Source Code
 .\src\xorgate.vhd=VHDL Source Code
+.\src\orgate.vhd=VHDL Source Code
 .\src\TestBench\fulladder_TB.vhd=VHDL Test Bench
 .\src\TestBench\fulladder_TB_runtest.do=Macro
 

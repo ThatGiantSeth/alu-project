@@ -54,8 +54,17 @@ begin
 	in2 <= ("0000000000000010"); 	
 	in3 <= ("0000000000000011"); 
 	in4 <= ("0000000000000100"); 
-	S <= "010";
-    wait for 10 ns;	 
+	S <= "000"; --should give in0
+    wait for 60 ns;	 
+	S <= "001";	  --should give in1
+	wait for 60 ns;	 
+	S <= "010";	  --should give in2
+	wait for 60 ns;	 
+	S <= "011";	  --should give in3
+	wait for 60 ns;	 
+	S <= "100";	  --should give in4
+	wait for 60 ns;	 
+	S <= "101"; --should give unknown result
   	wait; 
 end process;
 
