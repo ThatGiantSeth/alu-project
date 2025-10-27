@@ -1,11 +1,11 @@
-timestamp=1761508917155
+timestamp=1761604006637
 
 [~A]
-ModifyID=104
+ModifyID=110
 Version=74
 
 [~MFT]
-0=0|0alu.mgf|2593|0
+0=0|0alu.mgf|2768|0
 
 [adder16]
 A/structural=*21|../src/adder16.vhd|19|
@@ -43,6 +43,9 @@ A/behavioral=*21|../src/notgate.vhd|9|
 [or5gate]
 A/structural=*21|../src/or5gate.vhd|9|
 
+[orgate]
+A/structural=*21|../src/orgate.vhd|9|
+
 [subtractor16]
 A/structural=*21|../src/subtractor16.vhd|17|
 
@@ -62,8 +65,9 @@ multiplexer16=11|0*1536|
 multiplier16=11|0*1773|
 notgate=11|0*2001|
 or5gate=11|0*2175|
-subtractor16=11|0*2361|
-xorgate=11|0*2593|
+orgate=11|0*2361|
+subtractor16=11|0*2536|
+xorgate=11|0*2768|
 
 
 

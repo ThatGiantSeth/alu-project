@@ -3,6 +3,7 @@
 .\src\and3gate.vhd
 .\src\andgate.vhd
 .\src\xorgate.vhd
+.\src\orgate.vhd
 .\src\halfadder.vhd
 .\src\fulladder.vhd
 .\src\adder16.vhd
@@ -11,4 +12,4 @@
 .\src\multiplexer1.vhd
 .\src\multiplexer16.vhd
 .\src\alu.vhd
-.\src\testbench\alu_tb.vhd
+.\src\TestBench\alu_TB.vhd

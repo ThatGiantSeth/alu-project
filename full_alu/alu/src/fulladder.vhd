@@ -17,8 +17,8 @@ architecture structural	of fulladder is
 signal sum1, carry1, carry2 : std_logic;
 
 begin 
-	--two half adders connected with the carrouts of each being OR gated together
+	--two half adders connected with the carryouts of each being OR gated together
 	u1 : entity work.halfadder port map (a,b,sum1,carry1);
-	u2 : entity work.halfadder port map (sum1,cin,sum,carry2);
-	cout <= carry1 OR carry2 after 10ns;
+	u2 : entity work.halfadder port map (sum1,cin,sum,carry2);	
+    carryout: entity work.orgate port map (carry1, carry2, cout);
 end structural;

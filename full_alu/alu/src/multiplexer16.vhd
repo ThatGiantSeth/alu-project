@@ -10,18 +10,12 @@ entity multiplexer16 is
 	);
 end multiplexer16;	 
 
-architecture Structural of multiplexer16 is
-  component multiplexer1
-    Port (
-      S : in std_logic_vector(2 downto 0);
-      c0, c1, c2, c3, c4 : in std_logic;
-      R : out std_logic
-    );
-  end component;
+architecture Structural of multiplexer16 is	 
 
-begin
+begin	
+	-- create 16 1-bit multiplexers, mapping each bit of the inputs and output
   gen_mux: for i in 0 to 15 generate
-    mux: multiplexer1
+    mux: entity work.multiplexer1
       port map (
         S => S,
         c0 => in0(i),

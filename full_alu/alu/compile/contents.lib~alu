@@ -1,4 +1,4 @@
-104
+110
 ~E 0 "" 0 Adder16
 ~A 0 "" 0 structural
 ~E 0 "" 0 alu
@@ -22,6 +22,8 @@
 ~E 0 "" 0 notgate
 ~A 0 "" 0 behavioral
 ~E 0 "" 0 or5gate
+~A 0 "" 0 structural
+~E 0 "" 0 orgate
 ~A 0 "" 0 structural
 ~E 0 "" 0 subtractor16
 ~A 0 "" 0 structural
